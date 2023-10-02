@@ -107,18 +107,18 @@ const QuizApp = () => {
     }
   };
 
-  const handleCheckAnswer = () => {
+  // const handleCheckAnswer = () => {
 
-    if (selectedAnswer === questions[currentQuestion].correctAnswer) {
-      // Handle correct answer logic, e.g., increment score
-      setScore(score + 1)
-    } else {
-      // Handle incorrect answer logic
-    }
+  //   if (selectedAnswer === questions[currentQuestion].correctAnswer) {
+  //     // Handle correct answer logic, e.g., increment score
+  //     setScore(score + 1)
+  //   } else {
+  //     // Handle incorrect answer logic
+  //   }
 
-    // Move to the next question
-    handleNextQuestion();
-  };
+  //   // Move to the next question
+  //   handleNextQuestion();
+  // };
 
   const handleSubmit = ({fullName, email, contactNo, course, year}) => {
     if (emailRegex.test(email)) {
