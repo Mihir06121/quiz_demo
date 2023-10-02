@@ -165,7 +165,7 @@ const QuizApp = () => {
       score: score    
     } 
 
-    fetch(`http://localhost:8000/api/post-results`, {
+    fetch(`https://devsemble.com/api/post-results`, {
       method: 'POST',
       headers: {
           Accept: 'application/json',
