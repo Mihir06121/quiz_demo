@@ -55,8 +55,8 @@ const QuizApp = () => {
     }
   ]
   
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState('');
+  // const [currentQuestion, setCurrentQuestion] = useState(0);
+  // const [selectedAnswer, setSelectedAnswer] = useState('');
   // const [remainingQuesTime, setRemainingQuesTime] = useState(questions[currentQuestion].time);
   const [results, setResults] = useState(Array(questions.length).fill(''));
   const [score, setScore] = useState(0)
@@ -99,13 +99,7 @@ const QuizApp = () => {
     };
   }, [])
 
-  const handleNextQuestion = () => {
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-      setSelectedAnswer('');
-      // startTimer();
-    }
-  };
+
 
   // const handleCheckAnswer = () => {
 
