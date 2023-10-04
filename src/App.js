@@ -69,14 +69,16 @@ const QuizApp = () => {
     contactNo: '0000000000',
     email: 'test@gmail.com',
     course: '',
+    rollNo: '77777777777',
     year:'',
     error: '',
     errorMessage: '',
   })
 
-  const {fullName, email, contactNo, course, year, error, errorMessage} = formData
+  const {fullName, email, contactNo, rollNo, course, year, error, errorMessage} = formData
 
   const emailRegex = /\S+@\S+\.\S+/;
+  const rollReg = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/
 
   useEffect(() => {
     // Disable right-click
@@ -114,16 +116,42 @@ const QuizApp = () => {
   //   handleNextQuestion();
   // };
 
-  const handleSubmit = ({fullName, email, contactNo, course, year}) => {
-    if (emailRegex.test(email)) {
-      if (fullName === ''|| email === '' || contactNo === '' || course === '' || year === '') {
-        setFormData({ ...formData, error: 'Empty Fields', errorMessage: 'All fields Required' });
+  const handleSubmit = ({fullName, email, contactNo, rollNo, course, year}) => {
+    if (rollReg.test(rollNo)) {
+      if (emailRegex.test(email)) {
+        if (fullName === ''|| email === '' || contactNo === '' || rollNo === ''|| course === '' || year === '') {
+          setFormData({ ...formData, error: 'Empty Fields', errorMessage: 'All fields Required' });
+        } else {
+          let data = {
+            rollNo: rollNo
+          }
+          fetch(`https://devsemble.com/api/verify-email`, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+            }).then(response => {
+                response.json().then(r => {
+                  console.log(r)
+                  if (r.status) {
+                    setGreatingScreenDisplay(false)
+                    setDisplayQuestion(true)
+                  }
+                  if (r.status === false) {
+                    setFormData({ ...formData, error: 'Test Registered', errorMessage: 'Test with this Roll No already registered' });
+                  }
+                })
+            }).catch(err => 
+              console.log(err)
+            )
+        }
       } else {
-        setGreatingScreenDisplay(false)
-        setDisplayQuestion(true)
+        setFormData({ ...formData, error: 'Email Invalid', errorMessage: 'Please use a Valid Email' });
       }
-    } else {
-      setFormData({ ...formData, error: 'Email Invalid', errorMessage: 'Please use a Valid Email' });
+    } else {        
+      setFormData({ ...formData, error: 'RollNo Invalid', errorMessage: 'Please use a Valid Roll No' });
     }
   }
 
@@ -152,6 +180,7 @@ const QuizApp = () => {
     // Calculate the score if needed
     const newScore = newResults.filter((result) => result.isCorrect).length;
     setScore(newScore);
+    console.log(newScore, score)
     console.log("New Results", newResults[0])
     console.log(results)
 
@@ -161,8 +190,9 @@ const QuizApp = () => {
       contactNo: contactNo, 
       course: course, 
       year: year, 
+      rollNo: rollNo, 
       appearedResults: newResults, 
-      score: score    
+      score: newScore    
     } 
 
     fetch(`https://devsemble.com/api/post-results`, {
@@ -219,6 +249,14 @@ const QuizApp = () => {
                 type='tel'
                 className="form-control"/>
             </div>
+            <div className="mb-3">
+              <label className="form-label">Roll No (Please fill your 11 digit Roll No)</label>
+              <input
+                value={rollNo}
+                onChange={handleChange('rollNo')}
+                type='tel'
+                className="form-control"/>
+            </div>
             <div className='mb-3'>
               <label className="form-label">Select Course</label>
               <select className="form-select" onChange={handleChange('course')}>
@@ -246,7 +284,7 @@ const QuizApp = () => {
           </form>
             <button className="btn btn-primary col-12"
             onClick={() => {
-              handleSubmit({fullName, email, contactNo, course, year})
+              handleSubmit({fullName, email, contactNo, rollNo, course, year})
             }}>Submit</button>
           </div>
         </div>
@@ -265,7 +303,7 @@ const QuizApp = () => {
         <div>
           <CountdownCircleTimer
             isPlaying={displayQuestion}
-            duration={30}
+            duration={600}
             colors={['#004777', '#F7B801', '#A30000', '#A30000']}
             colorsTime={[7, 5, 2, 0]}
             onComplete={() => {handleCheckAnswers()}}
