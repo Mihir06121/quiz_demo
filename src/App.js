@@ -436,7 +436,7 @@ while (i <= 5) {
           {questions.map((question, index) => (
             <div key={index} className='card col-md-6 col-10 m-3 p-3'>
               {question.isImage ? <div className='text-center'>
-                <img src={question.image} alt='Question Image' />
+                <img src={question.image} alt='Question' />
               </div> : null}
               <p className="h3">{question.question}</p>
               {question.isCode ? <div>
