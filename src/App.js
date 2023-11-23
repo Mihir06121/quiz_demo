@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { Collapse } from 'reactstrap'
 // import { FullScreen, useFullScreenHandle } from "react-full-screen";
