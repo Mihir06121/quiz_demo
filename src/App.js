@@ -1274,7 +1274,7 @@ const QuizApp = () => {
           let data = {
             rollNo: rollNo
           }
-          fetch(`https://devsemble.com/api/verify-email`, {
+          fetch(`http://localhost:8000/api/verify-email`, {
             method: 'POST',
             headers: {
               Accept: 'application/json',
@@ -1319,8 +1319,12 @@ const QuizApp = () => {
       const selectedAnswer = selectedAnswers[index];
       const isCorrect = selectedAnswer === question.correctAnswer;
       const type = question.type
+      const isCode = question.isCode
+      const codeContent = question.codeContent
       return {
         ...question,
+        isCode,
+        codeContent,
         type,
         selectedAnswer,
         isCorrect,
@@ -1346,7 +1350,7 @@ const QuizApp = () => {
       score: newScore
     }
 
-    fetch(`https://devsemble.com/api/post-results`, {
+    fetch(`http://localhost:8000/api/post-results`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
