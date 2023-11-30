@@ -1225,7 +1225,7 @@ ORDER BY customers.customer_name;
   const emailRegex = /^[A-Za-z0-9._%+-]+@somaiya\.edu$/;
   const rollReg = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/
 
-  useEffect(() => {
+  useEffect((questions) => {
     // Disable right-click
     const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
     const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
