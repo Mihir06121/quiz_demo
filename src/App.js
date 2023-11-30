@@ -49,7 +49,7 @@ const QuizApp = () => {
       {
         "type": "Analytical",
         "question": "36 men can complete a piece of work in 18 days. In how many days will 27 men complete the same work?",
-        "options": ["30", "12", "36", "24"],
+        "options": ["30", "22", "36", "24"],
         "correctAnswer": "24",
         "isCode": false,
         "codeContent": "",
@@ -89,7 +89,7 @@ const QuizApp = () => {
       {
         "type": "Analytical",
         "question": "If the number 467X4 is divisible by 9, find the value of the digit marked as X.",
-        "options": ["4", "5", "6", "7"],
+        "options": ["04", "09", "6", "7"],
         "correctAnswer": "6",
         "isCode": false,
         "codeContent": "",
@@ -229,7 +229,7 @@ const QuizApp = () => {
       {
         "type": "Analytical",
         "question": "GO+TO=OUT, O+U+T=?",
-        "options": ["10", "3", "8", "5"],
+        "options": ["07", "3", "08", "11"],
         "correctAnswer": "3",
         "isCode": false,
         "codeContent": "",
@@ -666,14 +666,14 @@ const QuizApp = () => {
         "type": "Programming",
         "question": "In JavaScript, what will be the output of the following code?",
         "options": [
-          "15",
-          "14",
-          "5",
-          "[1, 2, 3, 4, 5]"
+          "10",
+          "19",
+          "17",
+          "[1, 2, 3, 4]"
         ],
-        "correctAnswer": "15",
+        "correctAnswer": "10",
         "isCode": true,
-        "codeContent": `let numbers = [1, 2, 3, 4, 5];
+        "codeContent": `let numbers = [1, 2, 3, 4];
   let num = 0;
   
   for (let i = 0; i < numbers.length; i++) {
@@ -710,12 +710,12 @@ const QuizApp = () => {
         "type": "Programming",
         "question": "In Python, what does the following code snippet do?",
         "options": [
-          "Calculates the square of all numbers in the list.",
-          "Calculates the sum of all even numbers in the list.",
-          "Calculates the cube of all numbers in the list.",
-          "Calculates the product of all numbers in the list."
+          "Calculates square of all numbers in the list.",
+          "Calculates sum of all even numbers in the list.",
+          "Calculates cube of all numbers in the list.",
+          "Calculates product of all numbers in the list."
         ],
-        "correctAnswer": "Calculates the square of all numbers in the list.",
+        "correctAnswer": "Calculates square of all numbers in the list.",
         "isCode": true,
         "codeContent": `numbers = [1, 2, 3, 4, 5]
   foo = [num ** 2 for num in numbers]
@@ -747,7 +747,7 @@ const QuizApp = () => {
         "question": "In JavaScript, what does the following code snippet do?",
         "options": [
           "Filters out all even numbers from the array.",
-          "Doubles each number in the array.",
+          "Doubles each number in array.",
           "Calculates the sum of the numbers.",
           "Checks if all numbers are prime."
         ],
@@ -789,7 +789,7 @@ const QuizApp = () => {
           "31",
           "16",
           "15",
-          "5"
+          "05"
         ],
         "correctAnswer": "15",
         "isCode": false,
@@ -802,7 +802,7 @@ const QuizApp = () => {
         "type": "Programming",
         "question": "You are given an array of integers: [3, 7, 1, 9, 2]. What is the average (mean) of these numbers?",
         "options": [
-          "5",
+          "5.5",
           "4.4",
           "4",
           "3.5"
@@ -853,7 +853,7 @@ const QuizApp = () => {
           "0",
           "1",
           "2",
-          "3"
+          "9"
         ],
         "correctAnswer": "1",
         "isCode": true,
@@ -872,8 +872,8 @@ const QuizApp = () => {
         "question": "What is the output of this JavaScript code?",
         "options": [
           "12",
-          "6",
-          "3",
+          "06",
+          "03",
           "NaN"
         ],
         "correctAnswer": "12",
