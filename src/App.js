@@ -1162,10 +1162,11 @@ ORDER BY customers.customer_name;
   ]
   
 
+
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   // Function to randomly select a specified number of questions from each type
-  const selectRandomQuestions = (questionsP, type, count) => {
-    const filteredQuestions = questionsP.filter((question) => question.type === type);
+  const selectRandomQuestions = (questions, type, count) => {
+    const filteredQuestions = questions.filter((question) => question.type === type);
     const selectedQuestions = [];
 
     while (selectedQuestions.length < count && filteredQuestions.length > 0) {
@@ -1178,6 +1179,7 @@ ORDER BY customers.customer_name;
 
   // Example: Select 5 random questions from each type
   useEffect(() => {
+    // console.log(questions)
     const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
     const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
     const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
