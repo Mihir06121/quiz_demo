@@ -1205,11 +1205,11 @@ const QuizApp = () => {
   const [greatingScreenDisplay, setGreatingScreenDisplay] = useState(true)
   const [selectedAnswers, setSelectedAnswers] = useState(Array(selectedQuestions.length).fill(''));
   const [formData, setFormData] = useState({
-    fullName: 'test',
-    contactNo: '1010101010',
-    email: 'test@somaiya.edu',
+    fullName: '',
+    contactNo: '',
+    email: '',
     course: '',
-    rollNo: '12121212121',
+    rollNo: '',
     year: '',
     error: '',
     errorMessage: '',
