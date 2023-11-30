@@ -1,63 +1,44 @@
-[
-    {
-      "question": "What is the capital of Italy?",
-      "options": ["Rome", "Milan", "Venice", "Florence"],
-      "correctAnswer": "Rome",
-      "time": 15
-    },
-    {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-      "correctAnswer": "Mars",
-      "time": 20
-    },
-    {
-      "question": "What is the largest mammal on Earth?",
-      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-      "correctAnswer": "Blue Whale",
-      "time": 25
-    },
-    {
-      "question": "Who wrote the play 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "Jane Austen", "William Shakespeare", "Leo Tolstoy"],
-      "correctAnswer": "William Shakespeare",
-      "time": 15
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Go", "Gl", "Au", "Ag"],
-      "correctAnswer": "Au",
-      "time": 10
-    },
-    {
-      "question": "Which gas do plants absorb from the atmosphere?",
-      "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-      "correctAnswer": "Carbon Dioxide",
-      "time": 20
-    },
-    {
-      "question": "What is the largest organ in the human body?",
-      "options": ["Liver", "Heart", "Skin", "Lungs"],
-      "correctAnswer": "Skin",
-      "time": 15
-    },
-    {
-      "question": "Who painted the 'Mona Lisa'?",
-      "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
-      "correctAnswer": "Leonardo da Vinci",
-      "time": 20
-    },
-    {
-      "question": "Which country is known as the Land of the Rising Sun?",
-      "options": ["China", "Japan", "South Korea", "Thailand"],
-      "correctAnswer": "Japan",
-      "time": 15
-    },
-    {
-      "question": "What is the chemical symbol for water?",
-      "options": ["H2O", "CO2", "O2", "CH4"],
-      "correctAnswer": "H2O",
-      "time": 10
-    }
-  ]
+[    
+
+{
+  "type": "Web Development",
+  "question": "Which planet is known as the Red Planet?",
+  "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+  "correctAnswer": "Mars",
+  "isCode": false,
+  "codeContent": "",
+  "isImage": false,
+  "image": ""
+},
+{
+  "type": "Web Development",
+  "question": "Which planet is known as the Red Planet?",
+  "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+  "correctAnswer": "Mars",
+  "isCode": false,
+  "codeContent": "",
+  "isImage": false,
+  "image": ""
+},
+{
+  "type": "Web Development",
+  "question": "Which planet is known as the Red Planet?",
+  "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+  "correctAnswer": "Mars",
+  "isCode": false,
+  "codeContent": "",
+  "isImage": false,
+  "image": ""
+},
+{
+  "type": "Web Development",
+  "question": "Which planet is known as the Red Planet?",
+  "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+  "correctAnswer": "Mars",
+  "isCode": false,
+  "codeContent": "",
+  "isImage": false,
+  "image": ""
+}
+]
   
