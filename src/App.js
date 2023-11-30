@@ -1176,31 +1176,30 @@ ORDER BY customers.customer_name;
     return selectedQuestions;
   };
 
-  // Example: Select 5 random questions from each type
-  useEffect(() => {
-    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
-    const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
-    const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
-    const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
+  // useEffect(() => {
+  //   const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
+  //   const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
+  //   const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
+  //   const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
 
-    // Combine the selected questions from each type
-    const combinedQuestions = [
-      ...selectedAnalyticalQuestions,
-      ...selectedWebDevelopmentQuestions,
-      ...selectedProgrammingQuestions,
-      ...selectedDatabasesQuestions,
-    ];
+  //   // Combine the selected questions from each type
+  //   const combinedQuestions = [
+  //     ...selectedAnalyticalQuestions,
+  //     ...selectedWebDevelopmentQuestions,
+  //     ...selectedProgrammingQuestions,
+  //     ...selectedDatabasesQuestions,
+  //   ];
 
-    // Set the selected questions in the state
-    setSelectedQuestions(combinedQuestions);
-  }, []);
+  //   // Set the selected questions in the state
+  //   setSelectedQuestions(combinedQuestions);
+  // }, []);
 
-  const [results, setResults] = useState(Array(questions.length).fill(''));
+  const [results, setResults] = useState(Array(selectedQuestions.length).fill(''));
   const [score, setScore] = useState(0)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [displayQuestion, setDisplayQuestion] = useState(false)
   const [greatingScreenDisplay, setGreatingScreenDisplay] = useState(true)
-  const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(''));
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(selectedQuestions.length).fill(''));
   const [formData, setFormData] = useState({
     fullName: '',
     contactNo: '',
@@ -1228,6 +1227,23 @@ ORDER BY customers.customer_name;
 
   useEffect(() => {
     // Disable right-click
+    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
+    const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
+    const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
+    const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
+
+    // Combine the selected questions from each type
+    const combinedQuestions = [
+      ...selectedAnalyticalQuestions,
+      ...selectedWebDevelopmentQuestions,
+      ...selectedProgrammingQuestions,
+      ...selectedDatabasesQuestions,
+    ];
+
+    // Set the selected questions in the state
+    setSelectedQuestions(combinedQuestions);
+
+
     document.addEventListener('contextmenu', (e) => e.preventDefault());
 
     function ctrlShiftKey(e, keyCode) {
