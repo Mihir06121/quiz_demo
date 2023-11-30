@@ -1164,8 +1164,8 @@ ORDER BY customers.customer_name;
 
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   // Function to randomly select a specified number of questions from each type
-  const selectRandomQuestions = (questions, type, count) => {
-    const filteredQuestions = questions.filter((question) => question.type === type);
+  const selectRandomQuestions = (questionsP, type, count) => {
+    const filteredQuestions = questionsP.filter((question) => question.type === type);
     const selectedQuestions = [];
 
     while (selectedQuestions.length < count && filteredQuestions.length > 0) {
