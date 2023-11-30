@@ -1166,46 +1166,47 @@ ORDER BY customers.customer_name;
   // Function to randomly select a specified number of questions from each type
   const selectRandomQuestions = (questions, type, count) => {
     const filteredQuestions = questions.filter((question) => question.type === type);
-    const selectedQuestions_1 = [];
+    const selectedQuestions = [];
 
-    while (selectedQuestions_1.length < count && filteredQuestions.length > 0) {
+    while (selectedQuestions.length < count && filteredQuestions.length > 0) {
       const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-      selectedQuestions_1.push(filteredQuestions.splice(randomIndex, 1)[0]);
+      selectedQuestions.push(filteredQuestions.splice(randomIndex, 1)[0]);
     }
 
-    return selectedQuestions_1;
+    return selectedQuestions;
   };
 
-  // useEffect(() => {
-  //   const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
-  //   const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
-  //   const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
-  //   const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
+  // Example: Select 5 random questions from each type
+  useEffect(() => {
+    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
+    const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
+    const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
+    const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
 
-  //   // Combine the selected questions from each type
-  //   const combinedQuestions = [
-  //     ...selectedAnalyticalQuestions,
-  //     ...selectedWebDevelopmentQuestions,
-  //     ...selectedProgrammingQuestions,
-  //     ...selectedDatabasesQuestions,
-  //   ];
+    // Combine the selected questions from each type
+    const combinedQuestions = [
+      ...selectedAnalyticalQuestions,
+      ...selectedWebDevelopmentQuestions,
+      ...selectedProgrammingQuestions,
+      ...selectedDatabasesQuestions,
+    ];
 
-  //   // Set the selected questions in the state
-  //   setSelectedQuestions(combinedQuestions);
-  // }, []);
+    // Set the selected questions in the state
+    setSelectedQuestions(combinedQuestions);
+  }, []);
 
-  const [results, setResults] = useState(Array(selectedQuestions.length).fill(''));
+  const [results, setResults] = useState(Array(questions.length).fill(''));
   const [score, setScore] = useState(0)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [displayQuestion, setDisplayQuestion] = useState(false)
   const [greatingScreenDisplay, setGreatingScreenDisplay] = useState(true)
-  const [selectedAnswers, setSelectedAnswers] = useState(Array(selectedQuestions.length).fill(''));
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(''));
   const [formData, setFormData] = useState({
-    fullName: '',
-    contactNo: '',
-    email: '',
+    fullName: 'test',
+    contactNo: '1010101010',
+    email: 'test@somaiya.edu',
     course: '',
-    rollNo: '',
+    rollNo: '12121212121',
     year: '',
     error: '',
     errorMessage: '',
@@ -1227,23 +1228,6 @@ ORDER BY customers.customer_name;
 
   useEffect(() => {
     // Disable right-click
-    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
-    const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
-    const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
-    const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
-
-    // Combine the selected questions from each type
-    const combinedQuestions = [
-      ...selectedAnalyticalQuestions,
-      ...selectedWebDevelopmentQuestions,
-      ...selectedProgrammingQuestions,
-      ...selectedDatabasesQuestions,
-    ];
-
-    // Set the selected questions in the state
-    setSelectedQuestions(combinedQuestions);
-
-
     document.addEventListener('contextmenu', (e) => e.preventDefault());
 
     function ctrlShiftKey(e, keyCode) {
@@ -1379,7 +1363,7 @@ ORDER BY customers.customer_name;
     )
   };
 
-  const duration = 60; // 1 hour in seconds
+  const duration = 3600; // 1 hour in seconds
 
   const formatTime = (time) => {
     const hours = Math.floor(time / 3600);
