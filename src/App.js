@@ -1166,14 +1166,14 @@ ORDER BY customers.customer_name;
   // Function to randomly select a specified number of questions from each type
   const selectRandomQuestions = (questions, type, count) => {
     const filteredQuestions = questions.filter((question) => question.type === type);
-    const selectedQuestions = [];
+    const selectedQuestions_1 = [];
 
-    while (selectedQuestions.length < count && filteredQuestions.length > 0) {
+    while (selectedQuestions_1.length < count && filteredQuestions.length > 0) {
       const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-      selectedQuestions.push(filteredQuestions.splice(randomIndex, 1)[0]);
+      selectedQuestions_1.push(filteredQuestions.splice(randomIndex, 1)[0]);
     }
 
-    return selectedQuestions;
+    return selectedQuestions_1;
   };
 
   // useEffect(() => {
@@ -1225,7 +1225,7 @@ ORDER BY customers.customer_name;
   const emailRegex = /^[A-Za-z0-9._%+-]+@somaiya\.edu$/;
   const rollReg = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/
 
-  useEffect((questions) => {
+  useEffect(() => {
     // Disable right-click
     const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
     const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
