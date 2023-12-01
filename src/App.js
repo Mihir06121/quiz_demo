@@ -3,10 +3,8 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { Collapse } from 'reactstrap'
 // import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
+
 const QuizApp = () => {
-
-  
-
 
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   // Function to randomly select a specified number of questions from each type
@@ -1217,15 +1215,6 @@ const QuizApp = () => {
 
   const { fullName, email, contactNo, rollNo, course, year, error, errorMessage } = formData
 
-  // const screen1 = useFullScreenHandle();
-  // const screen2 = useFullScreenHandle();
-
-  // const reportChange = useCallback((state, handle) => {
-  //   if (handle === screen1) {
-  //     console.log('Screen 1 went to', state, handle);
-  //   }
-  // }, [screen1]);
-
   const emailRegex = /^[A-Za-z0-9._%+-]+@somaiya\.edu$/;
   const rollReg = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/
 
@@ -1249,21 +1238,6 @@ const QuizApp = () => {
         return false;
     };
   }, [])
-
-
-
-  // const handleCheckAnswer = () => {
-
-  //   if (selectedAnswer === questions[currentQuestion].correctAnswer) {
-  //     // Handle correct answer logic, e.g., increment score
-  //     setScore(score + 1)
-  //   } else {
-  //     // Handle incorrect answer logic
-  //   }
-
-  //   // Move to the next question
-  //   handleNextQuestion();
-  // };
 
   const handleSubmit = ({ fullName, email, contactNo, rollNo, course, year }) => {
     if (rollReg.test(rollNo)) {
@@ -1387,7 +1361,7 @@ const QuizApp = () => {
       <Collapse isOpen={greatingScreenDisplay}>
         <div style={{ height: '100vh', background: 'white' }}>
           <div className='text-center display-1'>
-            Test
+            Developers-Cell Test
           </div>
           <div className='container-fluid row d-flex flex-wrap justify-content-center align-items-center'>
             <div className='col-md-8 col-10 '>
