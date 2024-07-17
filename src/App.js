@@ -1248,7 +1248,7 @@ const QuizApp = () => {
           let data = {
             rollNo: rollNo
           }
-          fetch(`https://devsemble.com/api/verify-email`, {
+          fetch(`https://attendease-sksc.somaiya.edu/api_v1/verify-email`, {
             method: 'POST',
             headers: {
               Accept: 'application/json',
@@ -1324,7 +1324,7 @@ const QuizApp = () => {
       score: newScore
     }
 
-    fetch(`https://devsemble.com/api/post-results`, {
+    fetch(`https://attendease-sksc.somaiya.edu/api_v1/post-results`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
