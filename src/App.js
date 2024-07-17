@@ -2220,7 +2220,7 @@ const QuizApp = () => {
   return (
     <div className="container-fluid" style={{ userSelect: 'none' }}>
       {/* <FullScreen handle={screen1} onChange={reportChange}> */}
-      <Collapse isOpen={!greatingScreenDisplay}>
+      <Collapse isOpen={greatingScreenDisplay}>
         <div style={{ height: '100vh', background: 'white' }}>
           <div className='text-center display-1'>
             Developers-Cell Test
@@ -2307,7 +2307,7 @@ const QuizApp = () => {
           </h1>
         </div>
       </Collapse>
-      <Collapse isOpen={!displayQuestion}>
+      <Collapse isOpen={displayQuestion}>
         <div className='m-5 fixed-top' style={{ zIndex: '-1' }}>
           <h1 className="">Quiz App</h1>
           <div>
