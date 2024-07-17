@@ -898,7 +898,7 @@ const QuizApp = () => {
     ];
 
     // Set the selected questions in the state
-    setSelectedQuestions(questions);
+    setSelectedQuestions(combinedQuestions);
   }, []);
 
   const [results, setResults] = useState(Array(selectedQuestions.length).fill(''));
