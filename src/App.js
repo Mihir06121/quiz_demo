@@ -2054,7 +2054,7 @@ const QuizApp = () => {
     ];
 
     // Set the selected questions in the state
-    setSelectedQuestions(combinedQuestions);
+    setSelectedQuestions(questions);
   }, []);
 
   const [results, setResults] = useState(Array(selectedQuestions.length).fill(''));
@@ -2346,7 +2346,7 @@ const QuizApp = () => {
                       checked={selectedAnswers[index] === option}
                       onChange={() => handleChangeNew(index, option)}
                     />
-                    <label className='' for={option}>{option}</label>
+                    <label style={{wordBreak: 'break-word'}} className='' for={option}>{option}</label>
                   </li>
                 ))}
               </div>
