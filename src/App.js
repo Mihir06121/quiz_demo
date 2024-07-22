@@ -25,216 +25,15 @@ const QuizApp = () => {
 
     const questions = [
       {
-        "type": "Databases",
-        "question": "Which SQL clause is used to filter the rows returned by a query?",
-        "options": ["WHERE", "SELECT", "GROUP BY", "FILTER BY"],
-        "correctAnswer": "WHERE",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following is a valid SQL statement to create a new table?",
-        "options": ["CREATE NEW TABLE table_name (column1 datatype, column2 datatype);", "CREATE TABLE table_name (column1 datatype, column2 datatype);", "CREATE DATABASE table_name (column1 datatype, column2 datatype);", "CREATE NEW table_name (column1 datatype, column2 datatype);"],
-        "correctAnswer": "CREATE TABLE table_name (column1 datatype, column2 datatype);",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Imagine a library database with two tables related by authors and their books.Which type of join would you use to find all book titles in the library, along with the names of the authors who wrote them? If a book doesn't have an assigned author yet, you want to include the book title and 'Unknown Author' in the results.",
-        "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
-        "correctAnswer": "LEFT JOIN",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following use cases is best suited for a NoSQL database?",
-        "options": ["Banking systems requiring strong consistency", "E-commerce platforms with complex relational data", "Real-time analytics with large volumes of unstructured data", "ERP systems with structured data and complex queries"],
-        "correctAnswer": "Real-time analytics with large volumes of unstructured data",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "What is the primary purpose of indexing in databases?",
-        "options": ["To ensure data integrity", "To improve query performance", "To enforce foreign keys", "To back up data"],
-        "correctAnswer": "To improve query performance",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following is a correct MongoDB query to find all documents in a collection named 'products' where the 'price' is greater than 100?",
-        "options": ["db.products.find({ price: { $gt: 100 } })", "db.products.findAll({ price: { $gt: 100 } })", "db.products.search({ price: { $gt: 100 } })", "db.products.query({ price: { $gt: 100 } })"],
-        "correctAnswer": "db.products.find({ price: { $gt: 100 } })",
-        "isCode": true,
-        "codeContent": "db.products.find({ price: { $gt: 100 } })",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which keyword is used in SQL to sort the result set?",
-        "options": ["SORT BY", "ORDER BY", "GROUP BY", "FILTER BY"],
-        "correctAnswer": "ORDER BY",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "In a relational database, what is a primary key?",
-        "options": ["A unique identifier for each record in a table", "A field that allows null values", "A field that links two tables together", "A field used for sorting data"],
-        "correctAnswer": "A unique identifier for each record in a table",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "What does ACID stand for in the context of database transactions?",
-        "options": ["Accuracy, Consistency, Integrity, Durability", "Atomicity, Consistency, Isolation, Durability", "Atomicity, Consistency, Integrity, Durability", "Accuracy, Consistency, Indexing, Dictionary"],
-        "correctAnswer": "Atomicity, Consistency, Isolation, Durability",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following SQL commands is used to modify existing records in a table?",
-        "options": ["ALTER", "MODIFY", "UPDATE", "CHANGE"],
-        "correctAnswer": "UPDATE",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "What is the purpose of the transaction management module in a DBMS?",
-        "options": ["To ensure data consistency and integrity", "To handle input/output operations", "To manage file storage", "To provide concurrency control and recovery mechanisms, ensuring the ACID properties of transactions"],
-        "correctAnswer": "To ensure data consistency and integrity",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which type of database is typically used for applications requiring complex transactions and ACID compliance?",
-        "options": ["NoSQL", "SQL", "Key-value store", "Document store"],
-        "correctAnswer": "SQL",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "In which scenario is a NoSQL database more appropriate than a SQL database?",
-        "options": ["When data is highly relational and structured", "When flexible schema design is required", "When strict ACID transactions are necessary", "When complex SQL queries and joins are needed"],
-        "correctAnswer": "When flexible schema design is required",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following is a characteristic of NoSQL databases?",
-        "options": ["Fixed schema", "Highly structured data", "Flexible schema", "Requires complex joins"],
-        "correctAnswer": "Flexible schema",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "In MongoDB, which data format is used to store documents?",
-        "options": ["XML", "JSON", "CSV", "YAML"],
-        "correctAnswer": "JSON",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Database Management Systems",
-        "question": "Consider a collection named products that stores information about products in a store. The collection has documents with fields like name, price, and category.\n Query: ",
+        "type": "Analytical",
+        "question": "Which company's logo is a red and yellow logo with a stylized letter \"M\" made up of two arches?",
         "options": [
-          "{ \"name\": \"Hat\", \"price\": 8 }{ \"name\": \"Shirt\", \"price\": 15 }{ \"name\": \"Trousers\", \"price\": 20 }",
-          "{ \"_id\": \"prod1\", \"name\": \"Shirt\", \"price\": 15 }{ \"_id\": \"prod3\", \"name\": \"Trousers\", \"price\": 20 }",
-          "{ \"name\": \"Shirt\", \"price\": 15, \"category\": \"Clothing\" }{ \"name\": \"Hat\", \"price\": 8, \"category\": \"Accessories\" } { \"name\": \"Trousers\", \"price\":20, \"category\": \"Clothing\" }{ \"name\": \"Scarf\", \"price\": 5, \"category\": \"Accessories\" }",
-          "{ \"name\": \"Shirt\", \"price\": 15 }{ \"name\": \"Trousers\", \"price\": 20 }"
+          "McDonald's",
+          "Microsoft",
+          "Mozilla",
+          "Monster Energy"
         ],
-        "correctAnswer": "{ \"name\": \"Shirt\", \"price\": 15 }{ \"name\": \"Trousers\", \"price\": 20 }",
-        "isCode": true,
-        "codeContent": "db.products.find({ price: { $gt: 10 } }, { name: 1, price: 1 }).sort({ price: 1 });\n Data:{ \"_id\": \"prod1\", \"name\": \"Shirt\", \"price\": 15, \"category\": \"Clothing\" }\n { \"_id\": \"prod2\", \"name\": \"Hat\", \"price\": 8, \"category\": \"Accessories\" }\n { \"_id\": \"prod3\", \"name\": \"Trousers\", \"price\": 20, \"category\": \"Clothing\" }\n { \"_id\": \"prod4\", \"name\": \"Scarf\", \"price\": 5, \"category\": \"Accessories\" }",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "Which of the following is a property of a 'transaction' in a DBMS?",
-        "options": ["It can be divided into smaller parts", "It must be completed entirely or not at all", "It is not recoverable in case of a failure", "It does not ensure data consistency"],
-        "correctAnswer": "It must be completed entirely or not at all",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "The DBMS acts as an interface between ________________ and ________________ of an enterprise-class system.",
-        "options": ["Data and the DBMS", "Application and SQL", "Database application and the database", "The user and the software"],
-        "correctAnswer": "Database application and the database",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "For designing a normal RDBMS which of the following normal form is considered adequate?",
-        "options": ["4NF", "3NF", "2NF", "5NF"],
-        "correctAnswer": "3NF",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Databases",
-        "question": "A system is in a ______ state if there exists a set of transactions such that every transaction in the set is waiting for another transaction in the set.",
-        "options": ["Idle", "Waiting", "Deadlock", "Ready"],
-        "correctAnswer": "Deadlock",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-
-      {
-        "type": "Analytical",
-        "question": "Which number should come next in the series: 2, 3, 5, 8, 12, 17, ...?",
-        "options": ["21", "23", "24", "25"],
-        "correctAnswer": "23",
+        "correctAnswer": "McDonald's",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -242,9 +41,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A man walks 5 km north, then turns right and walks 3 km. Then, he turns left and walks 2 km. Finally, he turns left again and walks 3 km. How far is he from the starting point?",
-        "options": ["5 km", "6 km", "7 km", "8 km"],
-        "correctAnswer": "5 km",
+        "question": "What is the name of the first web browser developed in 1990?",
+        "options": [
+          "Internet Explorer",
+          " Mozilla Firefox",
+          "Google Chrome",
+          "WorldWideWeb"
+        ],
+        "correctAnswer": "WorldWideWeb",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -252,9 +56,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "If A is the brother of B, B is the sister of C, and C is the father of D, how is A related to D?",
-        "options": ["Father", "Brother", "Uncle", "Grandfather"],
-        "correctAnswer": "Uncle",
+        "question": "Which company's logo is a blue and white logo with a stylized letter \"T\" made up of two birds?",
+        "options": [
+          "Twitter",
+          "Tumblr",
+          "TikTok",
+          "Twitch"
+        ],
+        "correctAnswer": "Twitter",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -262,9 +71,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Pointing to a photograph, a woman says, This man's son's sister is my mother-in-law. How is the woman's husband related to the man in the photograph?",
-        "options": ["Grandson", "Son", "Son-in-law", "Grandfather"],
-        "correctAnswer": "Grandson",
+        "question": "Who is credited with inventing the first practical computer?",
+        "options": [
+          "Charles Babbage",
+          "Ada Lovelace",
+          "Alan Turing",
+          "John Atanasoff"
+        ],
+        "correctAnswer": "Charles Babbage",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -272,9 +86,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Complete the series: 3, 9, 27, ?, 243",
-        "options": ["54", "81", "72", "108"],
-        "correctAnswer": "81",
+        "question": "In what year did Netflix adopt its current logo design?",
+        "options": [
+          "2007",
+          "2012",
+          "2014",
+          "2016"
+        ],
+        "correctAnswer": "2014",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -282,9 +101,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "If South-East becomes North, North-East becomes West and so on, what will West become?",
-        "options": ["North-East", "North-West", "South-East", "South-West"],
-        "correctAnswer": "South-East",
+        "question": "Which website is known for its online video streaming?",
+        "options": [
+          "YouTube",
+          "Netflix",
+          "Amazon Prime",
+          "Hulu"
+        ],
+        "correctAnswer": "YouTube",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -292,9 +116,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "If A + B means A is the sister of B; A - B means A is the brother of B; A * B means A is the daughter of B, then what does P * Q - R mean?",
-        "options": ["P is the daughter of Q and Q is the brother of R", "P is the sister of Q and Q is the brother of R", "P is the daughter of Q and Q is the sister of R", "P is the daughter of Q and Q is the daughter of R"],
-        "correctAnswer": "P is the daughter of Q and Q is the brother of R",
+        "question": "Which website is known for its online software development platform?",
+        "options": [
+          "GitHub",
+          "Stack Overflow",
+          "Microsoft",
+          "Apple"
+        ],
+        "correctAnswer": "GitHub",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -302,9 +131,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "If 'X' means '+' and '/' means '-', what is the value of 20 X 5 / 2?",
-        "options": ["25", "10", "30", "23"],
-        "correctAnswer": "23",
+        "question": "Which website is known for its online blogging platform?",
+        "options": [
+          "WordPress",
+          "Blogger",
+          "Medium",
+          "Tumblr"
+        ],
+        "correctAnswer": "WordPress",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -312,9 +146,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A clock shows the time as 3:30. What will be the angle between the minute hand and the hour hand?",
-        "options": ["65 degrees", "75 degrees", "90 degrees", "105 degrees"],
-        "correctAnswer": "75 degrees",
+        "question": "What is the purpose of a web application firewall (WAF)?",
+        "options": [
+          "To protect web applications from cyber threats",
+          "To improve web application performance",
+          "To monitor web application traffic",
+          "To develop web applications"
+        ],
+        "correctAnswer": "To protect web applications from cyber threats",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -322,9 +161,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "In a class of 60 students, the average age is 12 years. The average age of 25 girls is 11 years. What is the average age of the boys?",
-        "options": ["12 years", "13 years", "14 years", "15 years"],
-        "correctAnswer": "13 years",
+        "question": "What does ISP stand for?",
+        "options": [
+          "Internet Service Provider",
+          "Internet Service Process",
+          "Internet Service Program",
+          "Internet Service Platform"
+        ],
+        "correctAnswer": "Internet Service Provider",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -332,9 +176,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Which one of the following is not a leap year?",
-        "options": ["1600", "1992", "1700", "2016"],
-        "correctAnswer": "1700",
+        "question": "What does USB stand for?",
+        "options": [
+          "Universal Serial Bus",
+          "Universal System Bus",
+          "Universal Service Bus",
+          "Universal Storage Bus"
+        ],
+        "correctAnswer": "Universal Serial Bus",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -342,9 +191,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A train running at a speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?",
-        "options": ["120 meters", "150 meters", "180 meters", "200 meters"],
-        "correctAnswer": "150 meters",
+        "question": "What does GIS stand for?",
+        "options": [
+          "Geographic Information System",
+          "Graphic Information System",
+          "General Information System",
+          "Global Information System"
+        ],
+        "correctAnswer": "Geographic Information System",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -352,9 +206,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Tom puts on his socks before he puts on his shoes. He puts on his shirt before he puts on his jacket. Tom puts on his shoes before he puts on his shirt. If the first two statements are true, the third statement is",
-        "options": ["true", "false", "cannot be determined"],
-        "correctAnswer": "cannot be determined",
+        "question": "What does PDF stand for?",
+        "options": [
+          "Portable Document Format",
+          "Personal Document Format",
+          "Professional Document Format",
+          "Protected Document Format"
+        ],
+        "correctAnswer": "Portable Document Format",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -362,9 +221,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Fact 1: Robert has four vehicles. Fact 2: Two of the vehicles are red. Fact 3: One of the vehicles is a minivan. If the first three statements are facts, which of the following statements must also be a fact? I: Robert has a red minivan. II: Robert has three cars. III: Robert's favorite color is red.",
-        "options": ["I only", "II only", "II and III only", "None of the statements is a known fact."],
-        "correctAnswer": "None of the statements is a known fact.",
+        "question": "Who is the CEO of Microsoft?",
+        "options": [
+          "Satya Nadella",
+          "Bill Gates",
+          "Steve Ballmer",
+          "John W. Thompson"
+        ],
+        "correctAnswer": "Satya Nadella",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -372,9 +236,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "Two criminals (C1 and C2) and two police officers (P1 and P2) need to cross a river on a small raft that can only hold a maximum of two people at a time. They cannot leave a criminal alone without a police officer on either side of the river for security reasons. What is the minimum number of one-way trips the raft needs to make to safely transport all four people across the river, following the safety rule?",
-        "options": ["3 trips", "4 trips", "5 trips", "6 trips"],
-        "correctAnswer": "5 trips",
+        "question": "Who is the CEO of Amazon?",
+        "options": [
+          "Jeff Bezos",
+          "Andy Jassy",
+          "Werner Vogels",
+          "Tom Taylor"
+        ],
+        "correctAnswer": "Jeff Bezos",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -382,9 +251,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "When my parents married their age was in a ratio 11:10 (father’s age : mother’s age). This year they celebrated their 15th anniversary. If the total of their ages at their silver jubilee anniversary will be 113, find my father’s age now.",
-        "options": ["40 years", "33 years", "48 years", "42 years"],
-        "correctAnswer": "48 years",
+        "question": "Who founded Microsoft?",
+        "options": [
+          "Bill Gates and Paul Allen",
+          "Steve Jobs and Steve Wozniak",
+          "Larry Ellison and Bob Miner",
+          "Marc Andreessen and Jim Clark"
+        ],
+        "correctAnswer": "Bill Gates and Paul Allen",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -392,9 +266,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "T and E are sisters. The ratio of their ages when their brother was born was 6:5. The ratio of their ages when their brother was 12 years was 10:9. Find the age of T when her brother got married at the age of 28.",
-        "options": ["45, 42 years", "44, 41 years", "46, 43 years", "47, 44 years"],
-        "correctAnswer": "46, 43 years",
+        "question": "Who founded HP (Hewlett-Packard), the company that developed the first handheld calculator?",
+        "options": [
+          "Bill Hewlett and Dave Packard",
+          "Bill Gates and Paul Allen",
+          "Steve Jobs and Steve Wozniak",
+          "Larry Ellison and Bob Miner"
+        ],
+        "correctAnswer": "Bill Hewlett and Dave Packard",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -402,9 +281,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A tech company has 8 open positions - 2 in software engineering, 3 in data analysis, and 3 in project management. If the company can only hire 5 people, how many unique hiring combinations are possible?",
-        "options": ["45", "36", "55", "27"],
-        "correctAnswer": "36",
+        "question": "What does OTP stand for?",
+        "options": [
+          "One-Time Password",
+          "One-Touch Payment",
+          "Online Transaction Processing",
+          "Open Technology Protocol"
+        ],
+        "correctAnswer": "One-Time Password",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -412,9 +296,14 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A computer science student needs to take 6 core courses and 4 elective courses from a list of 10 core courses and 8 elective courses. How many unique course schedules are possible?",
-        "options": ["280", "5,040", "3,360", "14,700"],
-        "correctAnswer": "14,700",
+        "question": "Which of the following is a feature of Instagram Stories?",
+        "options": [
+          "Permanent posting",
+          "24-hour disappearance",
+          "Ability to share with individual users",
+          "email"
+        ],
+        "correctAnswer": "24-hour disappearance",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -422,461 +311,314 @@ const QuizApp = () => {
       },
       {
         "type": "Analytical",
-        "question": "A bag contains 5 red balls, 3 green balls, and 2 blue balls. Two balls are randomly drawn from the bag without replacement. What is the probability that the two balls drawn are of different colors?",
-        "options": ["3/5", "7/10", "4/5", "9/10"],
-        "correctAnswer": "9/10",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-
-      {
-        "type": "Web Development",
-        "question": "What is the purpose of the return statement?",
-        "options": ["To terminate the program", "To pass control back to the calling function", "To print output to the screen", "To declare a variable"],
-        "correctAnswer": "To pass control back to the calling function",
+        "question": "What is the purpose of the GPU (Graphics Processing Unit)?",
+        "options": [
+          "To process graphics and video",
+          "To process audio and sound",
+          "To process data and calculations",
+          "To store data and programs"
+        ],
+        "correctAnswer": "To process graphics and video",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Web Development",
-        "question": "Which of the following is not a data type in JavaScript?",
-        "options": ["String", "Number", "Boolean", "Character"],
-        "correctAnswer": "Character",
+        "type": "Analytical",
+        "question": "What is the term for a program that can run on multiple operating systems?",
+        "options": [
+          "Cross-platform",
+          "Open-source",
+          "Closed-source",
+          "Proprietary"
+        ],
+        "correctAnswer": "Cross-platform",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Web Development",
-        "question": "What is the output of the following JavaScript code?",
-        "options": ["null", "undefined", "object", "number"],
-        "correctAnswer": "object",
-        "isCode": true,
-        "codeContent": "console.log(typeof(null));",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What does AJAX stand for?",
-        "options": ["Asynchronous JavaScript and XML", "Advanced JavaScript and XML", "Application JavaScript and XML", "Asynchronous JSON and XML"],
-        "correctAnswer": "Asynchronous JavaScript and XML",
+        "type": "Analytical",
+        "question": "What is the term for a program that is free to download and use, but requires payment for advanced features?",
+        "options": [
+          "Freeware",
+          "Shareware",
+          "Open-source",
+          "Trialware"
+        ],
+        "correctAnswer": "Shareware",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Web Development",
-        "question": "Which method is used to write HTML output in JavaScript?",
-        "options": ["document.write()", "console.log()", "window.alert()", "document.output()"],
-        "correctAnswer": "document.write()",
+        "type": "Analytical",
+        "question": "Which software is used for editing and manipulating images?",
+        "options": [
+          "Adobe Photoshop",
+          "Microsoft Word",
+          "Google Chrome",
+          "Mozilla Firefox"
+        ],
+        "correctAnswer": "Adobe Photoshop",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Web Development",
-        "question": "What is the result of the following code?",
-        "options": ["a = 6, b = 12", "a = 7, b = 11", "a = 7, b = 12", "a = 6, b = 11"],
-        "correctAnswer": "a = 7, b = 12",
-        "isCode": true,
-        "codeContent": "int a = 5; int b = ++a + a++;",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What is the primary advantage of a B-tree over a binary search tree?",
-        "options": ["Faster insertion", "Better memory utilization", "Balances itself automatically", "More efficient for large data sets stored on disk"],
-        "correctAnswer": "More efficient for large data sets stored on disk",
+        "type": "Analytical",
+        "question": "What is the term for a program that provides real-time protection against malware and viruses?",
+        "options": [
+          "Antivirus software",
+          "Firewall software",
+          "Encryption software",
+          "Backup software"
+        ],
+        "correctAnswer": "Antivirus software",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Web Development",
-        "question": "What is the output of the following code? If x has the value 30 and y has the value 8, which one of the following is the output resulting from this code executing?",
-        "options": ["one", "one two four", "one two", "one two three four"],
-        "correctAnswer": "one two",
-        "isCode": true,
-        "codeContent": "if (x > 10) {\n  print(\"one\");\n  if (y < 10) {\n      print(\"two\");\n  }\n}\nif (x < 20) {\n  print(\"three\");\n  if (y > 5) {\n     print(\"four\");\n  }\n}",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["120", "150", "155", "180"],
-        "correctAnswer": "180",
-        "isCode": true,
-        "codeContent": "x = 5\n\t\t\ty = x * (x + 1)\n\t\t\tz = x * y + y\n\t\t\tprint(z)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["1 2", "2 1", "Error", "Undefined"],
-        "correctAnswer": "2 1",
-        "isCode": true,
-        "codeContent": "a = 1\n\t\tb = 2\n\t\ta, b = b, a\n\t\tprint(a, b)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["[1, 2, 3]", "[1, 2, 3, 4]", "[4, 1, 2, 3]", "Error"],
-        "correctAnswer": "[1, 2, 3, 4]",
-        "isCode": true,
-        "codeContent": "a = [1, 2, 3]\n\t\tb = a\n\t\tb.append(4)\n\t\tprint(a)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "Find the output.",
-        "options": ["-8 -125", "8 125", "4 25", "8 1 0 27 125"],
-        "correctAnswer": "-8 -125",
-        "isCode": true,
-        "codeContent": "def print_numbers(numbers):\n    for num in numbers:\n        if num < 0:\n            print(num * num * num)\n\nnumbers = [-2, 1, 0, 3, -5]\nprint_numbers(numbers)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following Java code?",
-        "options": ["ArrayIndexOutOfBoundsException", "NullPointerException", "Syntax error", "No error"],
-        "correctAnswer": "ArrayIndexOutOfBoundsException",
-        "isCode": true,
-        "codeContent": "public class Main {\n    public static void main(String[] args) {\n        int[] arr = new int[5];\n        System.out.println(arr[5]);\n    }\n}",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What is the error in the following code?",
-        "options": ["Missing semicolon", "Syntax error", "Variable sum is not initialized", "No error"],
-        "correctAnswer": "Syntax error",
-        "isCode": true,
-        "codeContent": "public class Main {\n    public static void main(String[] args) {\n       int a = 10;\n       int b = 20;\n       int sum = a + b;\n       System.out.println(\"Sum: \" + sum);\n    }\n}",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["14", "15", "16", "Undefined"],
-        "correctAnswer": "15",
-        "isCode": true,
-        "codeContent": "int a = 5;\nint b = 10;\nint c = a + b++;\nSystem.out.println(c);",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["2 1 3", "1 2 3", "2 2 3", "2 1 4"],
-        "correctAnswer": "2 1 4",
-        "isCode": true,
-        "codeContent": "int a = 1;\nint b = 2;\nint c = ++a + b--;\nSystem.out.println(a + \"\\t\" + b + \"\\t\" + c);",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["40", "41", "44", "43"],
-        "correctAnswer": "44",
-        "isCode": true,
-        "codeContent": "int a = 10;\nint b = a++ + ++a + --a + a--;\nSystem.out.println(b);",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "What will be the output of the following code?",
-        "options": ["4 2 2", "5 2 2", "4 3 2", "4 2 1"],
-        "correctAnswer": "4 2 2",
-        "isCode": true,
-        "codeContent": "int a = 5;\nint b = 3;\nint c = a-- - --b;\nSystem.out.println(a + \" \" + b + \" \" + c);",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "Find the error in the following code.",
-        "options": ["Function definition is missing a colon (:)", "Function is missing a return statement", "Variable result is not defined inside the function", "Non of the above"],
-        "correctAnswer": "Non of the above",
-        "isCode": true,
-        "codeContent": "def calculate_area(length, width):\n    area = length * width\n    return area\n\nresult = calculate_area(5, 3)\nprint(\"Area:\", result)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "Find the output of the following code.",
-        "options": ["Prints all numbers in the list", "Prints all even numbers in the list, doubled", "Prints all odd numbers in the list, doubled", "Prints the sum of all even numbers"],
-        "correctAnswer": "Prints all odd numbers in the list, doubled",
-        "isCode": true,
-        "codeContent": "numbers = [1, 2, 3, 4, 5]\nfor num in numbers:\n    if num % 2 != 0:\n        print(num * 2)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "Find the error in the following code.",
-        "options": ["String slicing is incorrect for reversal", "Missing variable declaration for reversed_string", "Should use a loop to iterate through the string", "None of the above"],
-        "correctAnswer": "None of the above",
-        "isCode": true,
-        "codeContent": "my_string = \"Hello World!\"\nreversed_string = my_string[::-1]\nprint(reversed_string)",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Web Development",
-        "question": "Find the output of the following code.",
-        "options": ["Prints \"X is greater\"", "Prints \"Y is greater or equal\"", "Throws an error", "Prints nothing"],
-        "correctAnswer": "Prints \"Y is greater or equal\"",
-        "isCode": true,
-        "codeContent": "x = 10\ny = 20\n\nif x > y:\n    print(\"X is greater\")\nelse:\n    print(\"Y is greater or equal\")",
-        "isImage": false,
-        "image": ""
-      },
-
-      {
-        "type": "Programming",
-        "question": "Which of the following is a non-preemptive CPU scheduling algorithm?",
-        "options": ["First Come First Serve (FCFS)", "Round Robin (RR)", "Shortest Job Next (SJN)", "Longest Remaining Time (LRT)"],
-        "correctAnswer": "Longest Remaining Time (LRT)",
+        "type": "Analytical",
+        "question": "What is the name of the founder of Snapchat?",
+        "options": [
+          "Evan Spiegel",
+          "Mark Zuckerberg",
+          "Jack Dorsey",
+          "Kevin Systrom"
+        ],
+        "correctAnswer": "Evan Spiegel",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "Which of the following is a characteristic of a real-time operating system?",
-        "options": ["High throughput", "Predictable response times", "User-friendly interface", "Extensive multitasking"],
-        "correctAnswer": "Predictable response times",
+        "type": "Analytical",
+        "question": "What is a repository in GitHub?",
+        "options": [
+          "A collection of files and folders",
+          "A single file or project",
+          "A collaboration tool for teams",
+          "A version control system"
+        ],
+        "correctAnswer": "A collection of files and folders",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is a deadlock in an operating system?",
-        "options": ["A situation where two or more processes are unable to proceed because each is waiting for the other to release a resource", "A process that has terminated", "A type of interrupt", "A memory management technique"],
-        "correctAnswer": "A situation where two or more processes are unable to proceed because each is waiting for the other to release a resource",
+        "type": "Analytical",
+        "question": "What is Wikipedia?",
+        "options": [
+          "A social media platform",
+          "A news website",
+          "A free online encyclopedia",
+          "A blog hosting site"
+        ],
+        "correctAnswer": "A free online encyclopedia",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What does the term 'paging' refer to in the context of Programming?",
-        "options": ["Dividing the physical memory into fixed-size blocks", "Dividing the logical memory into fixed-size blocks", "Moving processes from primary memory to secondary memory", "A type of process scheduling"],
-        "correctAnswer": "Dividing the logical memory into fixed-size blocks",
+        "type": "Analytical",
+        "question": "What is the name of Zoom's virtual meeting space?",
+        "options": [
+          "Virtual Room",
+          "Meeting Space",
+          "Virtual Office",
+          "Zoom Room"
+        ],
+        "correctAnswer": "Zoom Room",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "Which command is used to give file execution rights in a Linux system?",
-        "options": ["chmod -x", "chmod +x", "chmod+x", "chmod-x"],
-        "correctAnswer": "chmod +x",
+        "type": "Analytical",
+        "question": "What is full form of YAHOO ?",
+        "options": [
+          "Yet Another Hierarchical Officio Oracular",
+          "Yahoo Another Hierarchical Officious Oracle",
+          "Yet Another Hierarchical Officious Oracular",
+          "Yet Another Hierarchical Officious Oracle"
+        ],
+        "correctAnswer": "Yet Another Hierarchical Officious Oracle",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "Which of the following is not a type of operating system architecture?",
-        "options": ["Microkernel", "Monolithic kernel", "Hybrid kernel", "Macro kernel"],
-        "correctAnswer": "Macro kernel",
+        "type": "Analytical",
+        "question": "What is meaning of docx",
+        "options": [
+          "Document copied and xeroxed",
+          "Document extended",
+          "Draft extended",
+          "Draft copied and xeroxed"
+        ],
+        "correctAnswer": "Document extended",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the main purpose of the bootloader in an operating system?",
-        "options": ["To load the operating system into memory at startup", "To manage user accounts", "To handle system errors", "To manage file systems"],
-        "correctAnswer": "To load the operating system into memory at startup",
+        "type": "Analytical",
+        "question": "What is the process of extracting insights from data called?",
+        "options": [
+          "Data analysis",
+          "Data mining",
+          "Data visualization",
+          "Data science"
+        ],
+        "correctAnswer": "Data science",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the function of the swap space in an operating system?",
-        "options": ["To extend the physical memory by using disk space", "To store temporary files", "To manage network traffic", "To handle device drivers"],
-        "correctAnswer": "To extend the physical memory by using disk space",
+        "type": "Analytical",
+        "question": "What is the name of Amazon's virtual assistant?",
+        "options": [
+          "Alexa",
+          "Echo",
+          "Dot",
+          "siri"
+        ],
+        "correctAnswer": "siri",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the main purpose of a system call in an operating system?",
-        "options": ["To manage the execution of processes", "To provide a way for user programs to request services from the kernel", "To allocate and deallocate memory for processes", "To handle interrupts from hardware devices"],
-        "correctAnswer": "To provide a way for user programs to request services from the kernel",
+        "type": "Analytical",
+        "question": "How much storage space does Google Drive offer for free?",
+        "options": [
+          "1 GB",
+          "5 GB",
+          "15 GB",
+          "20 GB"
+        ],
+        "correctAnswer": "15 GB",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the primary purpose of synchronization in concurrent programming?",
-        "options": ["To increase the execution speed of processes", "To prevent race conditions", "To allocate memory efficiently", "To improve the user interface"],
-        "correctAnswer": "To prevent race conditions",
+        "type": "Analytical",
+        "question": "What is ChatGPT?",
+        "options": [
+          "A chatbot developed by Google",
+          "A language model developed by OpenAI",
+          "A virtual assistant developed by Amazon",
+          "A messaging platform developed by Facebook"
+        ],
+        "correctAnswer": "A language model developed by OpenAI",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "Which of the following is a synchronization mechanism used in multithreading?",
-        "options": ["Semaphore", "Thread", "Fork", "Join"],
-        "correctAnswer": "Semaphore",
+        "type": "Analytical",
+        "question": "Which of the following games is exclusive to the PlayStation platform?",
+        "options": [
+          "Fortnite",
+          "Minecraft",
+          "God of War",
+          "Grand Theft Auto"
+        ],
+        "correctAnswer": "God of War",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "In a producer-consumer problem, which synchronization mechanism can be used to ensure proper execution?",
-        "options": ["Mutexes", "Semaphores", "Monitors", "All of the above"],
-        "correctAnswer": "All of the above",
+        "type": "Analytical",
+        "question": "What is Meta AI?",
+        "options": [
+          "A social media platform",
+          "A artificial intelligence laboratory",
+          "A virtual reality headset",
+          "A messaging app"
+        ],
+        "correctAnswer": "A artificial intelligence laboratory",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the purpose of a mutex in concurrent programming?",
-        "options": ["To speed up the execution of processes", "To allocate resources to processes", "To ensure that only one thread accesses a critical section at a time", "To synchronize the execution of different programs"],
-        "correctAnswer": "To ensure that only one thread accesses a critical section at a time",
+        "type": "Analytical",
+        "question": "What is full form of BMP ?",
+        "options": [
+          "Bit Map",
+          "Byte Map",
+          "Byte Map Process",
+          "Bit Map Process"
+        ],
+        "correctAnswer": "Bit Map",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "What is the main difference between TCP and UDP?",
-        "options": ["TCP is connectionless, UDP is connection-oriented", "TCP is connection-oriented, UDP is connectionless", "TCP provides unreliable data transfer, UDP provides reliable data transfer", "TCP is used for streaming media, UDP is used for web browsing"],
-        "correctAnswer": "TCP is connection-oriented, UDP is connectionless",
+        "type": "Analytical",
+        "question": "Which website is known for its online music streaming?",
+        "options": [
+          "Spotify",
+          "Apple Music",
+          "samsung Music",
+          "MTv"
+        ],
+        "correctAnswer": "spotify",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "Message passing system allows processes to __________",
-        "options": ["communicate with each other without sharing the same address space", "communicate with one another by resorting to shared data", "share data", "name the recipient or sender of the message"],
-        "correctAnswer": "communicate with each other without sharing the same address space",
+        "type": "Analytical",
+        "question": " Which website is known for its online sports news platform?",
+        "options": [
+          "ESPN",
+          "Fox Sports",
+          "CBS Sports",
+          "NBC Sports"
+        ],
+        "correctAnswer": "ESPN",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
         "image": ""
       },
       {
-        "type": "Programming",
-        "question": "The Dining Philosophers problem highlights the need for synchronization in Programming. Traditionally, a solution involves ensuring only one philosopher picks up both chopsticks at a time. In an alternative approach, which statement is most likely to prevent deadlocks without restricting access to both chopsticks simultaneously?",
-        "options": ["Each philosopher always picks up the left chopstick first.", "Each philosopher picks up the chopsticks closest to them first.", "Philosophers can only eat if their neighbors are thinking.", "A designated philosopher always has priority to access the chopsticks."],
-        "correctAnswer": "Each philosopher always picks up the left chopstick first.",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "What will happen if a non-recursive mutex is locked more than once?",
-        "options": ["Starvation", "Deadlock", "Aging", "Signaling"],
-        "correctAnswer": "Deadlock",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "Semaphores are mostly used to implement __________",
-        "options": ["System calls", "IPC (Inter Process Communication) mechanisms", "System protection", "None of the mentioned"],
-        "correctAnswer": "IPC (Inter Process Communication) mechanisms",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "A process is thrashing if __________",
-        "options": ["it is spending more time paging than executing", "it is spending less time paging than executing", "page fault occurs", "swapping cannot take place"],
-        "correctAnswer": "it is spending more time paging than executing",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "The data structure used for file directory is called __________",
-        "options": ["mount table", "hash table", "file table", "process table"],
-        "correctAnswer": "hash table",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "If we preempt a resource from a process, the process cannot continue with its normal execution and it must be __________",
-        "options": ["aborted", "rolled back", "terminated", "queued"],
-        "correctAnswer": "rolled back",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "What is an interrupt vector?",
-        "options": ["It is an address that is indexed to an interrupt handler", "It is a unique device number that is indexed by an address", "It is a unique identity given to an interrupt", "None of the mentioned"],
-        "correctAnswer": "It is an address that is indexed to an interrupt handler",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
-      },
-      {
-        "type": "Programming",
-        "question": "A parent process calling _____ system call will be suspended until children processes terminate.",
-        "options": ["wait", "fork", "exit", "exec"],
-        "correctAnswer": "wait",
+        "type": "Analytical",
+        "question": "Who is the CEO of Google?",
+        "options": [
+          "Sundar Pichai",
+          "Jeff Bezos",
+          "Mark Zuckerberg",
+          "Satya Nadella"
+        ],
+        "correctAnswer": "Sundar Pichai",
         "isCode": false,
         "codeContent": "",
         "isImage": false,
@@ -884,17 +626,17 @@ const QuizApp = () => {
       }
     ]
 
-    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Programming', 10);
-    const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
-    const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
-    const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
+    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Analytical', 20);
+    // const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
+    // const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
+    // const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
 
     // Combine the selected questions from each type
     const combinedQuestions = [
-      ...selectedAnalyticalQuestions,
-      ...selectedWebDevelopmentQuestions,
+      // ...selectedAnalyticalQuestions,
+      // ...selectedWebDevelopmentQuestions,
       ...selectedProgrammingQuestions,
-      ...selectedDatabasesQuestions,
+      // ...selectedDatabasesQuestions,
     ];
 
     // Set the selected questions in the state
