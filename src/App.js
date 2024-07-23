@@ -25,606 +25,606 @@ const QuizApp = () => {
 
     const questions = [
       {
-        "type": "Analytical",
-        "question": "Which company's logo is a red and yellow logo with a stylized letter \"M\" made up of two arches?",
-        "options": [
-          "McDonald's",
-          "Microsoft",
-          "Mozilla",
-          "Monster Energy"
-        ],
-        "correctAnswer": "McDonald's",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which OOP concept allows for code reuse?",
+          "options": [
+              "Inheritance",
+              "Polymorphism",
+              "Abstraction",
+              "Composition"
+          ],
+          "correctAnswer": "Inheritance",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the name of the first web browser developed in 1990?",
-        "options": [
-          "Internet Explorer",
-          " Mozilla Firefox",
-          "Google Chrome",
-          "WorldWideWeb"
-        ],
-        "correctAnswer": "WorldWideWeb",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which OOP concept allows for objects to be treated as if they were of a different class?",
+          "options": [
+              "Polymorphism",
+              "Inheritance",
+              "Encapsulation",
+              "Type Casting"
+          ],
+          "correctAnswer": "Type Casting",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which company's logo is a blue and white logo with a stylized letter \"T\" made up of two birds?",
-        "options": [
-          "Twitter",
-          "Tumblr",
-          "TikTok",
-          "Twitch"
-        ],
-        "correctAnswer": "Twitter",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What data type for a constant called: PI = 3.14",
+          "options": [
+              "string",
+              "integer",
+              "float",
+              "date"
+          ],
+          "correctAnswer": "float",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who is credited with inventing the first practical computer?",
-        "options": [
-          "Charles Babbage",
-          "Ada Lovelace",
-          "Alan Turing",
-          "John Atanasoff"
-        ],
-        "correctAnswer": "Charles Babbage",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What data type to store a credit card number?",
+          "options": [
+              "string",
+              "integer",
+              "float",
+              "date"
+          ],
+          "correctAnswer": "string",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "In what year did Netflix adopt its current logo design?",
-        "options": [
-          "2007",
-          "2012",
-          "2014",
-          "2016"
-        ],
-        "correctAnswer": "2014",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the correct syntax to write an HTML comment?",
+          "options": [
+              "//",
+              "/* Comment */",
+              "// Comment //",
+              "<!-- Comment -->"
+          ],
+          "correctAnswer": "<!-- Comment -->",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which website is known for its online video streaming?",
-        "options": [
-          "YouTube",
-          "Netflix",
-          "Amazon Prime",
-          "Hulu"
-        ],
-        "correctAnswer": "YouTube",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "HTML tags with no content are called _____.",
+          "options": [
+              "Special tags",
+              "Advanced tags",
+              "Empty tags",
+              "other tags"
+          ],
+          "correctAnswer": "Empty tags",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which website is known for its online software development platform?",
-        "options": [
-          "GitHub",
-          "Stack Overflow",
-          "Microsoft",
-          "Apple"
-        ],
-        "correctAnswer": "GitHub",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "When a program is executed, the ____ interacted by sending a message to one another.",
+          "options": [
+              "Objects",
+              "Classes",
+              "Operating system",
+              "Memory"
+          ],
+          "correctAnswer": "Objects",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which website is known for its online blogging platform?",
-        "options": [
-          "WordPress",
-          "Blogger",
-          "Medium",
-          "Tumblr"
-        ],
-        "correctAnswer": "WordPress",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "____ are the predefined words that have special significance in any language.",
+          "options": [
+              "Variables",
+              "Data types",
+              "Constant",
+              "Keywords"
+          ],
+          "correctAnswer": "Keywords",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the purpose of a web application firewall (WAF)?",
-        "options": [
-          "To protect web applications from cyber threats",
-          "To improve web application performance",
-          "To monitor web application traffic",
-          "To develop web applications"
-        ],
-        "correctAnswer": "To protect web applications from cyber threats",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Under which pillar of OOPS do base class and derived class relationships come?",
+          "options": [
+              "Polymorphism",
+              "Inheritance",
+              "Encapsulation",
+              "Type Casting"
+          ],
+          "correctAnswer": "Inheritance",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What does ISP stand for?",
-        "options": [
-          "Internet Service Provider",
-          "Internet Service Process",
-          "Internet Service Program",
-          "Internet Service Platform"
-        ],
-        "correctAnswer": "Internet Service Provider",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Choose the incorrect option below which is not a type of constructor.",
+          "options": [
+              "Copy constructor",
+              "Friend constructor",
+              "Parameterized constructor",
+              "Default constructor"
+          ],
+          "correctAnswer": "Friend constructor",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What does USB stand for?",
-        "options": [
-          "Universal Serial Bus",
-          "Universal System Bus",
-          "Universal Service Bus",
-          "Universal Storage Bus"
-        ],
-        "correctAnswer": "Universal Serial Bus",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the result of 0110 & 1100?",
+          "options": [
+              "1000",
+              "100",
+              "",
+              "1010"
+          ],
+          "correctAnswer": "100",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What does GIS stand for?",
-        "options": [
-          "Geographic Information System",
-          "Graphic Information System",
-          "General Information System",
-          "Global Information System"
-        ],
-        "correctAnswer": "Geographic Information System",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Left Shift operation is equivalent to __________",
+          "options": [
+              "Division by 2",
+              "Multiplying by 2",
+              "Adding 2",
+              "Subtrating 2"
+          ],
+          "correctAnswer": "Multiplying by 2",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What does PDF stand for?",
-        "options": [
-          "Portable Document Format",
-          "Personal Document Format",
-          "Professional Document Format",
-          "Protected Document Format"
-        ],
-        "correctAnswer": "Portable Document Format",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which of the following is a symbol for logical AND operator?",
+          "options": [
+              "||",
+              "&",
+              "&&",
+              "##"
+          ],
+          "correctAnswer": "&&",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who is the CEO of Microsoft?",
-        "options": [
-          "Satya Nadella",
-          "Bill Gates",
-          "Steve Ballmer",
-          "John W. Thompson"
-        ],
-        "correctAnswer": "Satya Nadella",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Right Shift operation >> is equivalent to _________",
+          "options": [
+              "Multiplying by 2",
+              "Division by 2",
+              "Adding 2",
+              "Subtracting 2"
+          ],
+          "correctAnswer": "Division by 2",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who is the CEO of Amazon?",
-        "options": [
-          "Jeff Bezos",
-          "Andy Jassy",
-          "Werner Vogels",
-          "Tom Taylor"
-        ],
-        "correctAnswer": "Jeff Bezos",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which one is used for class selector in CSS?",
+          "options": [
+              ".",
+              "$",
+              "#",
+              "%"
+          ],
+          "correctAnswer": ".",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who founded Microsoft?",
-        "options": [
-          "Bill Gates and Paul Allen",
-          "Steve Jobs and Steve Wozniak",
-          "Larry Ellison and Bob Miner",
-          "Marc Andreessen and Jim Clark"
-        ],
-        "correctAnswer": "Bill Gates and Paul Allen",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the correct syntax for font size?",
+          "options": [
+              "font size: 14px;",
+              "font-size: 14px;",
+              "font_size: 14px;",
+              "FontSize: 14px;"
+          ],
+          "correctAnswer": "font-size: 14px;",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who founded HP (Hewlett-Packard), the company that developed the first handheld calculator?",
-        "options": [
-          "Bill Hewlett and Dave Packard",
-          "Bill Gates and Paul Allen",
-          "Steve Jobs and Steve Wozniak",
-          "Larry Ellison and Bob Miner"
-        ],
-        "correctAnswer": "Bill Hewlett and Dave Packard",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "In digital electronics, what does \"BCD\" stand for?",
+          "options": [
+              "Binary Code Decimal",
+              "Binary Coded Decimal",
+              "Bit Code Decimal",
+              "Byte Coded Decimal"
+          ],
+          "correctAnswer": "Binary Coded Decimal",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What does OTP stand for?",
-        "options": [
-          "One-Time Password",
-          "One-Touch Payment",
-          "Online Transaction Processing",
-          "Open Technology Protocol"
-        ],
-        "correctAnswer": "One-Time Password",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "The for statement     for(expr1;expr2;expr3) is equivalent to",
+          "options": [
+              "while(expr1==expr2)\n{ statement;expr3;}",
+              "while(expr1!=expr2)\n{ statement;expr3;}",
+              "expr1; \nwhile(expr2)\n{ statement;expr3;}",
+              "while(expr1=expr2)\n{ statement;expr3;}\""
+          ],
+          "correctAnswer": "expr1;\nwhile(expr2)\n{ statement;expr3;}",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which of the following is a feature of Instagram Stories?",
-        "options": [
-          "Permanent posting",
-          "24-hour disappearance",
-          "Ability to share with individual users",
-          "email"
-        ],
-        "correctAnswer": "24-hour disappearance",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the 2's complement of the binary number 0101?",
+          "options": [
+              "1010",
+              "1101",
+              "1011",
+              "1111"
+          ],
+          "correctAnswer": "1011",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the purpose of the GPU (Graphics Processing Unit)?",
-        "options": [
-          "To process graphics and video",
-          "To process audio and sound",
-          "To process data and calculations",
-          "To store data and programs"
-        ],
-        "correctAnswer": "To process graphics and video",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the purpose of a latch in digital electronics?",
+          "options": [
+              "To store a single bit of data",
+              "To perform arithmetic operations",
+              "To decode binary numbers",
+              "To invert the input signal"
+          ],
+          "correctAnswer": "To store a single bit of data",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the term for a program that can run on multiple operating systems?",
-        "options": [
-          "Cross-platform",
-          "Open-source",
-          "Closed-source",
-          "Proprietary"
-        ],
-        "correctAnswer": "Cross-platform",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What does De Morgan's first theorem state?",
+          "options": [
+              "(A + B)' = A' + B'",
+              "(A + B)' = A'B'",
+              "(AB)' = A' + B'",
+              "(AB)' = A'B'"
+          ],
+          "correctAnswer": "(AB)' = A' + B'",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the term for a program that is free to download and use, but requires payment for advanced features?",
-        "options": [
-          "Freeware",
-          "Shareware",
-          "Open-source",
-          "Trialware"
-        ],
-        "correctAnswer": "Shareware",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which property is used to define the text color?",
+          "options": [
+              "text-color",
+              "color",
+              "font-color",
+              "fontcolor"
+          ],
+          "correctAnswer": "color",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which software is used for editing and manipulating images?",
-        "options": [
-          "Adobe Photoshop",
-          "Microsoft Word",
-          "Google Chrome",
-          "Mozilla Firefox"
-        ],
-        "correctAnswer": "Adobe Photoshop",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which law states that A + A = A?",
+          "options": [
+              "Identity Law",
+              "Idempotent Law",
+              "Complement Law",
+              "Distributive Law"
+          ],
+          "correctAnswer": "Idempotent Law",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the term for a program that provides real-time protection against malware and viruses?",
-        "options": [
-          "Antivirus software",
-          "Firewall software",
-          "Encryption software",
-          "Backup software"
-        ],
-        "correctAnswer": "Antivirus software",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which company developed JavaScript?",
+          "options": [
+              "Netscape",
+              "Microsoft",
+              "Sun Microsystems",
+              "IBM"
+          ],
+          "correctAnswer": "Netscape",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the name of the founder of Snapchat?",
-        "options": [
-          "Evan Spiegel",
-          "Mark Zuckerberg",
-          "Jack Dorsey",
-          "Kevin Systrom"
-        ],
-        "correctAnswer": "Evan Spiegel",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the correct syntax for referring to an external script called \"script.js\"?",
+          "options": [
+              "<script href=\"script.js\">",
+              "<script name=\"script.js\">",
+              "<script src=\"script.js\">",
+              "<script link=\"script.js\">"
+          ],
+          "correctAnswer": "<script src=\"script.js\">",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is a repository in GitHub?",
-        "options": [
-          "A collection of files and folders",
-          "A single file or project",
-          "A collaboration tool for teams",
-          "A version control system"
-        ],
-        "correctAnswer": "A collection of files and folders",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which CSS property is used to specify uppercase and lowercase letters in a text?",
+          "options": [
+              "text-transform",
+              "text-case",
+              "case",
+              "text-casing"
+          ],
+          "correctAnswer": "text-transform",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is Wikipedia?",
-        "options": [
-          "A social media platform",
-          "A news website",
-          "A free online encyclopedia",
-          "A blog hosting site"
-        ],
-        "correctAnswer": "A free online encyclopedia",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is the correct way to write a JavaScript array?",
+          "options": [
+              "let colors = \"red\", \"green\", \"blue\";",
+              "let colors = (1:\"red\", 2:\"green\", 3:\"blue\");",
+              "let colors = [\"red\", \"green\", \"blue\"];",
+              "let colors = {\"red\", \"green\", \"blue\"};"
+          ],
+          "correctAnswer": "let colors = [\"red\", \"green\", \"blue\"];",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the name of Zoom's virtual meeting space?",
-        "options": [
-          "Virtual Room",
-          "Meeting Space",
-          "Virtual Office",
-          "Zoom Room"
-        ],
-        "correctAnswer": "Zoom Room",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which CSS property specifies if/how an element is displayed?",
+          "options": [
+              "block",
+              "display",
+              "element-display",
+              "element-block"
+          ],
+          "correctAnswer": "display",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is full form of YAHOO ?",
-        "options": [
-          "Yet Another Hierarchical Officio Oracular",
-          "Yahoo Another Hierarchical Officious Oracle",
-          "Yet Another Hierarchical Officious Oracular",
-          "Yet Another Hierarchical Officious Oracle"
-        ],
-        "correctAnswer": "Yet Another Hierarchical Officious Oracle",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which object is the top of the scope chain in JavaScript?",
+          "options": [
+              "window",
+              "document",
+              "global",
+              "scope"
+          ],
+          "correctAnswer": "window",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is meaning of docx",
-        "options": [
-          "Document copied and xeroxed",
-          "Document extended",
-          "Draft extended",
-          "Draft copied and xeroxed"
-        ],
-        "correctAnswer": "Document extended",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which operator is used for exponentiation in JavaScript?",
+          "options": [
+              "**",
+              "^",
+              "exp",
+              "pow"
+          ],
+          "correctAnswer": "**",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the process of extracting insights from data called?",
-        "options": [
-          "Data analysis",
-          "Data mining",
-          "Data visualization",
-          "Data science"
-        ],
-        "correctAnswer": "Data science",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which of the following is not an example of DBMS?",
+          "options": [
+              "MySQL",
+              "Microsoft Acess",
+              "IBM DB2",
+              "Google"
+          ],
+          "correctAnswer": "Google",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is the name of Amazon's virtual assistant?",
-        "options": [
-          "Alexa",
-          "Echo",
-          "Dot",
-          "siri"
-        ],
-        "correctAnswer": "siri",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What will the following code output? console.log(\"5\" + 3);",
+          "options": [
+              "\"53\"",
+              "8",
+              "5",
+              "\"8\""
+          ],
+          "correctAnswer": "\"53\"",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "How much storage space does Google Drive offer for free?",
-        "options": [
-          "1 GB",
-          "5 GB",
-          "15 GB",
-          "20 GB"
-        ],
-        "correctAnswer": "15 GB",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which method converts a JSON string into a JavaScript object?",
+          "options": [
+              "JSON.parse()",
+              "JSON.stringify()",
+              "JSON.convert()",
+              "JSON.toObject()"
+          ],
+          "correctAnswer": "JSON.parse()",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is ChatGPT?",
-        "options": [
-          "A chatbot developed by Google",
-          "A language model developed by OpenAI",
-          "A virtual assistant developed by Amazon",
-          "A messaging platform developed by Facebook"
-        ],
-        "correctAnswer": "A language model developed by OpenAI",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is ACID properties of DBMS Tranactions?",
+          "options": [
+              "Atomicity,Consistency,Isolation,Durability",
+              "Atomicity,Consistency,Isolation,Database",
+              "Atomicity,Consistency,Inconsistent,Durability",
+              "Available,Consistency,Isolation,Durability"
+          ],
+          "correctAnswer": "Atomicity,Consistency,Isolation,Durability",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which of the following games is exclusive to the PlayStation platform?",
-        "options": [
-          "Fortnite",
-          "Minecraft",
-          "God of War",
-          "Grand Theft Auto"
-        ],
-        "correctAnswer": "God of War",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Select the wrong class.",
+          "options": [
+              "CLASS A = 1 to 126",
+              "CLASS C = 192 to 220",
+              "CLASS B = 128 to 191",
+              "CLASS D = 224 to 239"
+          ],
+          "correctAnswer": "CLASS C = 192 to 220",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is Meta AI?",
-        "options": [
-          "A social media platform",
-          "A artificial intelligence laboratory",
-          "A virtual reality headset",
-          "A messaging app"
-        ],
-        "correctAnswer": "A artificial intelligence laboratory",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What does RAD stand for in software engineering?",
+          "options": [
+              "Real-time Application Development",
+              "Rapid Application Development",
+              "Rational Application Design",
+              "Rapid Algorithm Design"
+          ],
+          "correctAnswer": "Rapid Application Development",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "What is full form of BMP ?",
-        "options": [
-          "Bit Map",
-          "Byte Map",
-          "Byte Map Process",
-          "Bit Map Process"
-        ],
-        "correctAnswer": "Bit Map",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which type of testing is performed without any knowledge of the internal workings of the application?",
+          "options": [
+              "White-box testing",
+              "Black-box testing",
+              "Integration testing",
+              "Unit testing"
+          ],
+          "correctAnswer": "Black-box testing",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Which website is known for its online music streaming?",
-        "options": [
-          "Spotify",
-          "Apple Music",
-          "samsung Music",
-          "MTv"
-        ],
-        "correctAnswer": "spotify",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which device is used to connect different network segments in a computer network?",
+          "options": [
+              "Repeater",
+              "Router",
+              "Bridge",
+              "Modem"
+          ],
+          "correctAnswer": "Router",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": " Which website is known for its online sports news platform?",
-        "options": [
-          "ESPN",
-          "Fox Sports",
-          "CBS Sports",
-          "NBC Sports"
-        ],
-        "correctAnswer": "ESPN",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "Which layer of the OSI model ensures the error-free transmission of data?",
+          "options": [
+              "Physical Layer",
+              "Data Link Layer",
+              "Network Layer",
+              "Transport Layer"
+          ],
+          "correctAnswer": "Data Link Layer",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       },
       {
-        "type": "Analytical",
-        "question": "Who is the CEO of Google?",
-        "options": [
-          "Sundar Pichai",
-          "Jeff Bezos",
-          "Mark Zuckerberg",
-          "Satya Nadella"
-        ],
-        "correctAnswer": "Sundar Pichai",
-        "isCode": false,
-        "codeContent": "",
-        "isImage": false,
-        "image": ""
+          "type": "Analytical",
+          "question": "What is a Gantt chart used for in project management?",
+          "options": [
+              "To write code",
+              "To design system architecture",
+              "To schedule and track project tasks",
+              "To document requirements"
+          ],
+          "correctAnswer": "To schedule and track project tasks",
+          "isCode": false,
+          "codeContent": "",
+          "isImage": false,
+          "image": ""
       }
-    ]
+  ]
 
     const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Analytical', 20);
     // const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
@@ -792,7 +792,7 @@ const QuizApp = () => {
     )
   };
 
-  const duration = 1800; // 1 hour in seconds
+  const duration = 1200; // 1 hour in seconds
 
   const formatTime = (time) => {
     const hours = Math.floor(time / 3600);
