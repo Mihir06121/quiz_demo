@@ -25,608 +25,608 @@ const QuizApp = () => {
 
     const questions = [
       {
-          "type": "Analytical",
-          "question": "Which OOP concept allows for code reuse?",
-          "options": [
-              "Inheritance",
-              "Polymorphism",
-              "Abstraction",
-              "Composition"
-          ],
-          "correctAnswer": "Inheritance",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What are the values of the following Python expressions? ",
+        "options": [
+          "512, 64, 512",
+          "512, 512, 512",
+          "64, 512, 64",
+          "64, 64, 64"
+        ],
+        "correctAnswer": "512, 64, 512",
+        "isCode": true,
+        "codeContent": "2**(3**2)\n(2**3)**2\n2**3**2",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which OOP concept allows for objects to be treated as if they were of a different class?",
-          "options": [
-              "Polymorphism",
-              "Inheritance",
-              "Encapsulation",
-              "Type Casting"
-          ],
-          "correctAnswer": "Type Casting",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What will be the output of the following Python code?",
+        "options": [
+          "12",
+          "224",
+          "None",
+          "Error"
+        ],
+        "correctAnswer": "12",
+        "isCode": true,
+        "codeContent": "class tester:\n    def __init__(self, id):\n        self.id = str(id)\n    id='224'\n>>>temp = tester(12)\n>>>print(temp.id)",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What data type for a constant called: PI = 3.14",
-          "options": [
-              "string",
-              "integer",
-              "float",
-              "date"
-          ],
-          "correctAnswer": "float",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What will be the output of the following Python code if the input entered is 6?",
+        "options": [
+          "Bye (printed once)",
+          "No output",
+          "Invalid (printed once)",
+          "Bye (printed infinite number of times)"
+        ],
+        "correctAnswer": "Bye (printed infinite number of times)",
+        "isCode": true,
+        "codeContent": "valid = False\nwhile not valid:\n    try:\n        n = int(input('Enter a number'))\n        while n % 2 == 0:\n            print('Bye')\n        valid = True\n    except ValueError:\n        print('Invalid')",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What data type to store a credit card number?",
-          "options": [
-              "string",
-              "integer",
-              "float",
-              "date"
-          ],
-          "correctAnswer": "string",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "During the execution of following code, what will be the response, we get -",
+        "options": [
+          "KeyError",
+          "IndexError",
+          "ValueError",
+          "typeError"
+        ],
+        "correctAnswer": "KeyError",
+        "isCode": true,
+        "codeContent": "import pandas as pd\ns =pd.Series([1,2,3,4,5],index= ['a','b','c','d','e'])\nprint(s['f'])",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the correct syntax to write an HTML comment?",
-          "options": [
-              "//",
-              "/* Comment */",
-              "// Comment //",
-              "<!-- Comment -->"
-          ],
-          "correctAnswer": "<!-- Comment -->",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Compare the following two Python codes shown below and state the output if the input entered in each case is -5? ",
+        "options": [
+          "ValueError, NameError",
+          "AttributeError, ValueError",
+          "NameError, TypeError",
+          "TypeError, ValueError"
+        ],
+        "correctAnswer": "ValueError, NameError",
+        "isCode": true,
+        "codeContent": "CODE 1\nimport math\nnum=int(input('Enter a number of whose factorial you want to find'))\nprint(math.factorial(num))\n\nCODE 2\nnum=int(input('Enter a number of whose factorial you want to find'))\nprint(math.factorial(num))",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "HTML tags with no content are called _____.",
-          "options": [
-              "Special tags",
-              "Advanced tags",
-              "Empty tags",
-              "other tags"
-          ],
-          "correctAnswer": "Empty tags",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which AI technique is used for detecting fraudulent transactions in banking systems?",
+        "options": [
+          "Natural Language Processing (NLP)",
+          "Decision Trees",
+          "Neural Networks",
+          "K-means Clustering"
+        ],
+        "correctAnswer": "Neural Networks",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "When a program is executed, the ____ interacted by sending a message to one another.",
-          "options": [
-              "Objects",
-              "Classes",
-              "Operating system",
-              "Memory"
-          ],
-          "correctAnswer": "Objects",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "The _____ is something that you can obtain under contract from your vendor.",
+        "options": [
+          " SoS",
+          "PoS",
+          "QoS",
+          "RoS"
+        ],
+        "correctAnswer": "QoS",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "____ are the predefined words that have special significance in any language.",
-          "options": [
-              "Variables",
-              "Data types",
-              "Constant",
-              "Keywords"
-          ],
-          "correctAnswer": "Keywords",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What does the term “phishing” refer to in cybersecurity?",
+        "options": [
+          "A social engineering technique to gain unauthorized access to a network",
+          "A type of malware that spreads through email attachments",
+          "A method to encrypt data during transmission",
+          "A technique to detect vulnerabilities in a system"
+        ],
+        "correctAnswer": "A social engineering technique to gain unauthorized access to a network",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Under which pillar of OOPS do base class and derived class relationships come?",
-          "options": [
-              "Polymorphism",
-              "Inheritance",
-              "Encapsulation",
-              "Type Casting"
-          ],
-          "correctAnswer": "Inheritance",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which component would you choose to add physics to a 2D GameObject?",
+        "options": [
+          "Transform",
+          "Rigidbody",
+          "Rigidbody 2D",
+          "Transform 2D"
+        ],
+        "correctAnswer": "Rigidbody 2D",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Choose the incorrect option below which is not a type of constructor.",
-          "options": [
-              "Copy constructor",
-              "Friend constructor",
-              "Parameterized constructor",
-              "Default constructor"
-          ],
-          "correctAnswer": "Friend constructor",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is ANR in Android?",
+        "options": [
+          "Application Not Responding",
+          "Activity Not Running",
+          "Android Not Responding",
+          "Application Not Running"
+        ],
+        "correctAnswer": "Application Not Responding",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the result of 0110 & 1100?",
-          "options": [
-              "1000",
-              "100",
-              "",
-              "1010"
-          ],
-          "correctAnswer": "100",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "React is a ____.",
+        "options": [
+          "Web development Framework",
+          "JavaScript Library",
+          "jQuery",
+          "Web Server"
+        ],
+        "correctAnswer": "JavaScript Library",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Left Shift operation is equivalent to __________",
-          "options": [
-              "Division by 2",
-              "Multiplying by 2",
-              "Adding 2",
-              "Subtrating 2"
-          ],
-          "correctAnswer": "Multiplying by 2",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is the role of Deep Learning in AI applications?",
+        "options": [
+          "To simulate deep thinking in computers",
+          "To process large amounts of data with neural networks",
+          "To predict natural disasters",
+          "To perform validation"
+        ],
+        "correctAnswer": "To process large amounts of data with neural networks",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which of the following is a symbol for logical AND operator?",
-          "options": [
-              "||",
-              "&",
-              "&&",
-              "##"
-          ],
-          "correctAnswer": "&&",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is the term used to describe a cybersecurity attack that involves guessing passwords or encryption keys through exhaustive trial-and-error?",
+        "options": [
+          "Ransomware attack",
+          "Phishing attack",
+          "Brute-force attack",
+          "injection attack"
+        ],
+        "correctAnswer": "Brute-force attack",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Right Shift operation >> is equivalent to _________",
-          "options": [
-              "Multiplying by 2",
-              "Division by 2",
-              "Adding 2",
-              "Subtracting 2"
-          ],
-          "correctAnswer": "Division by 2",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which type of machine learning is feedback-based machine learning?",
+        "options": [
+          "Semi-supervised Machine learning",
+          "Unsupervised Machine learning",
+          "Supervised Machine learning",
+          "Reinforcement Machine learning"
+        ],
+        "correctAnswer": "Reinforcement Machine learning",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which one is used for class selector in CSS?",
-          "options": [
-              ".",
-              "$",
-              "#",
-              "%"
-          ],
-          "correctAnswer": ".",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is Blockchain?",
+        "options": [
+          "A currency",
+          "A ledger",
+          "A type of currency",
+          "A distributed ledger on a peer-to-peer network"
+        ],
+        "correctAnswer": "A distributed ledger on a peer-to-peer network",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the correct syntax for font size?",
-          "options": [
-              "font size: 14px;",
-              "font-size: 14px;",
-              "font_size: 14px;",
-              "FontSize: 14px;"
-          ],
-          "correctAnswer": "font-size: 14px;",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "MQTT Stands for:",
+        "options": [
+          "Mass Query Telemetry Transport",
+          "Message Queuing Telemetry Transport",
+          "Message Query Text Transport",
+          "Mass Queuing Text Transport"
+        ],
+        "correctAnswer": "Message Queuing Telemetry Transport",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "In digital electronics, what does \"BCD\" stand for?",
-          "options": [
-              "Binary Code Decimal",
-              "Binary Coded Decimal",
-              "Bit Code Decimal",
-              "Byte Coded Decimal"
-          ],
-          "correctAnswer": "Binary Coded Decimal",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Washing machine is a Robot. True or false?",
+        "options": [
+          "TRUE",
+          "FALSE",
+          "",
+          ""
+        ],
+        "correctAnswer": "TRUE",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "The for statement     for(expr1;expr2;expr3) is equivalent to",
-          "options": [
-              "while(expr1==expr2)\n{ statement;expr3;}",
-              "while(expr1!=expr2)\n{ statement;expr3;}",
-              "expr1; \nwhile(expr2)\n{ statement;expr3;}",
-              "while(expr1=expr2)\n{ statement;expr3;}\""
-          ],
-          "correctAnswer": "expr1;\nwhile(expr2)\n{ statement;expr3;}",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which of the following is used to handle background operations in Android?",
+        "options": [
+          "Activity",
+          "BroadcastReceiver",
+          "Service",
+          "ContentProvider"
+        ],
+        "correctAnswer": "Service",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the 2's complement of the binary number 0101?",
-          "options": [
-              "1010",
-              "1101",
-              "1011",
-              "1111"
-          ],
-          "correctAnswer": "1011",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which method is used to insert a single document into a MongoDB collection?",
+        "options": [
+          "db.collection.insertOne()",
+          "db.collection.insert()",
+          "db.collection.addOne()",
+          "db.collection.create()"
+        ],
+        "correctAnswer": "db.collection.insertOne()",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the purpose of a latch in digital electronics?",
-          "options": [
-              "To store a single bit of data",
-              "To perform arithmetic operations",
-              "To decode binary numbers",
-              "To invert the input signal"
-          ],
-          "correctAnswer": "To store a single bit of data",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Scalability is prioritized over latency in jobs such as _____.",
+        "options": [
+          "HBase",
+          "HDFS",
+          "Hive",
+          "Mapreduce"
+        ],
+        "correctAnswer": "Hive",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What does De Morgan's first theorem state?",
-          "options": [
-              "(A + B)' = A' + B'",
-              "(A + B)' = A'B'",
-              "(AB)' = A' + B'",
-              "(AB)' = A'B'"
-          ],
-          "correctAnswer": "(AB)' = A' + B'",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is the purpose of the man-in-middle attack?",
+        "options": [
+          "To steal sensitive data from the target system",
+          "To overload the target system's resources",
+          "To deceive the user into clicking on a malicious link",
+          "To intercept and tamper with communication between two parties"
+        ],
+        "correctAnswer": "To intercept and tamper with communication between two parties",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which property is used to define the text color?",
-          "options": [
-              "text-color",
-              "color",
-              "font-color",
-              "fontcolor"
-          ],
-          "correctAnswer": "color",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is the purpose of a confusion matrix in machine learning?",
+        "options": [
+          "To display the distribution of data points",
+          "To visualize feature importance",
+          "To evaluate the performance of a classification model",
+          "To preprocess categorical data"
+        ],
+        "correctAnswer": "To evaluate the performance of a classification model",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which law states that A + A = A?",
-          "options": [
-              "Identity Law",
-              "Idempotent Law",
-              "Complement Law",
-              "Distributive Law"
-          ],
-          "correctAnswer": "Idempotent Law",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which statement is required to define a class component?",
+        "options": [
+          "extends React.Components",
+          "imports React.Components",
+          "extends React.Component",
+          "imports React.Component"
+        ],
+        "correctAnswer": "extends React.Component",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which company developed JavaScript?",
-          "options": [
-              "Netscape",
-              "Microsoft",
-              "Sun Microsystems",
-              "IBM"
-          ],
-          "correctAnswer": "Netscape",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which version of Android introduced Adaptive Battery and Adaptive Brightness features?",
+        "options": [
+          "Android 8.0 Oreo",
+          "Android 9.0 Pie",
+          "Android 10",
+          "Android 11"
+        ],
+        "correctAnswer": "Android 9.0 Pie",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the correct syntax for referring to an external script called \"script.js\"?",
-          "options": [
-              "<script href=\"script.js\">",
-              "<script name=\"script.js\">",
-              "<script src=\"script.js\">",
-              "<script link=\"script.js\">"
-          ],
-          "correctAnswer": "<script src=\"script.js\">",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which type of testing is responsible for testing how stable the software is built?",
+        "options": [
+          "Recover testing",
+          "Regression testing",
+          "Smoke testing",
+          "Unit testing"
+        ],
+        "correctAnswer": "Smoke testing",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which CSS property is used to specify uppercase and lowercase letters in a text?",
-          "options": [
-              "text-transform",
-              "text-case",
-              "case",
-              "text-casing"
-          ],
-          "correctAnswer": "text-transform",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is the code name for Android 10?",
+        "options": [
+          "Nougat",
+          "Pie",
+          "Q",
+          "R"
+        ],
+        "correctAnswer": "Q",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is the correct way to write a JavaScript array?",
-          "options": [
-              "let colors = \"red\", \"green\", \"blue\";",
-              "let colors = (1:\"red\", 2:\"green\", 3:\"blue\");",
-              "let colors = [\"red\", \"green\", \"blue\"];",
-              "let colors = {\"red\", \"green\", \"blue\"};"
-          ],
-          "correctAnswer": "let colors = [\"red\", \"green\", \"blue\"];",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What is data encryption standard (DES)?",
+        "options": [
+          "block cipher",
+          "stream cipher",
+          "bit cipher",
+          "byte cipher"
+        ],
+        "correctAnswer": "block cipher",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which CSS property specifies if/how an element is displayed?",
-          "options": [
-              "block",
-              "display",
-              "element-display",
-              "element-block"
-          ],
-          "correctAnswer": "display",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "In the context of neural networks, what is a \"epoch\"?",
+        "options": [
+          "One forward and backward pass of all the training examples",
+          "The total number of neurons in a layer",
+          "The learning rate of the model",
+          "A specific layer in the network"
+        ],
+        "correctAnswer": "One forward and backward pass of all the training examples",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which object is the top of the scope chain in JavaScript?",
-          "options": [
-              "window",
-              "document",
-              "global",
-              "scope"
-          ],
-          "correctAnswer": "window",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which version of Android removed the dessert-themed naming convention?",
+        "options": [
+          "Android 9.0 Pie",
+          "Android 10",
+          "Android 11",
+          "Android 12"
+        ],
+        "correctAnswer": "Android 10",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which operator is used for exponentiation in JavaScript?",
-          "options": [
-              "**",
-              "^",
-              "exp",
-              "pow"
-          ],
-          "correctAnswer": "**",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which of the following is an example of a VR headset?",
+        "options": [
+          "Oculus Rift",
+          "Google Glass",
+          "Apple Watch",
+          "Fitbit"
+        ],
+        "correctAnswer": "Oculus Rift",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which of the following is not an example of DBMS?",
-          "options": [
-              "MySQL",
-              "Microsoft Acess",
-              "IBM DB2",
-              "Google"
-          ],
-          "correctAnswer": "Google",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "A game based on which animated franchise propelled augmented reality (AR) into the mainstream in recent years?",
+        "options": [
+          "Pokemon",
+          "Fortnite",
+          "Super Mario",
+          "World of Warcraft"
+        ],
+        "correctAnswer": "Pokemon",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What will the following code output? console.log(\"5\" + 3);",
-          "options": [
-              "\"53\"",
-              "8",
-              "5",
-              "\"8\""
-          ],
-          "correctAnswer": "\"53\"",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Key loggers are form of",
+        "options": [
+          "Spyware",
+          "Shoulder surfing",
+          "Trojan",
+          "Social engineering"
+        ],
+        "correctAnswer": "Spyware",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which method converts a JSON string into a JavaScript object?",
-          "options": [
-              "JSON.parse()",
-              "JSON.stringify()",
-              "JSON.convert()",
-              "JSON.toObject()"
-          ],
-          "correctAnswer": "JSON.parse()",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which technology is often combined with VR to enhance the sense of interaction with the environment?",
+        "options": [
+          "Artificial Intelligence (AI)",
+          "Blockchain",
+          "Haptic feedback",
+          "Cloud computing"
+        ],
+        "correctAnswer": "Haptic feedback",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is ACID properties of DBMS Tranactions?",
-          "options": [
-              "Atomicity,Consistency,Isolation,Durability",
-              "Atomicity,Consistency,Isolation,Database",
-              "Atomicity,Consistency,Inconsistent,Durability",
-              "Available,Consistency,Isolation,Durability"
-          ],
-          "correctAnswer": "Atomicity,Consistency,Isolation,Durability",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "In MongoDB, what is a 'schema'?",
+        "options": [
+          "A predefined structure for data",
+          "A query language for the database",
+          "A tool for data replication",
+          ""
+        ],
+        "correctAnswer": "A predefined structure for data",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Select the wrong class.",
-          "options": [
-              "CLASS A = 1 to 126",
-              "CLASS C = 192 to 220",
-              "CLASS B = 128 to 191",
-              "CLASS D = 224 to 239"
-          ],
-          "correctAnswer": "CLASS C = 192 to 220",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What does the \"webpack\" command do?",
+        "options": [
+          "\r\nA module bundler",
+          "Runs react local development server.",
+          "Transpiles all the Javascript down into one file",
+          "Compiler"
+        ],
+        "correctAnswer": "\r\nA module bundler",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What does RAD stand for in software engineering?",
-          "options": [
-              "Real-time Application Development",
-              "Rapid Application Development",
-              "Rational Application Design",
-              "Rapid Algorithm Design"
-          ],
-          "correctAnswer": "Rapid Application Development",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which blockchain component is responsible for creating and adding new blocks to the chain?",
+        "options": [
+          "Wallet",
+          "Node",
+          "Transaction",
+          "Miner"
+        ],
+        "correctAnswer": "Miner",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which type of testing is performed without any knowledge of the internal workings of the application?",
-          "options": [
-              "White-box testing",
-              "Black-box testing",
-              "Integration testing",
-              "Unit testing"
-          ],
-          "correctAnswer": "Black-box testing",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "What does the grep command do?",
+        "options": [
+          "Finds a file by name",
+          "Searches inside a file for a string",
+          "Replaces strings in a file",
+          "Lists all files in a directory"
+        ],
+        "correctAnswer": "Searches inside a file for a string",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which device is used to connect different network segments in a computer network?",
-          "options": [
-              "Repeater",
-              "Router",
-              "Bridge",
-              "Modem"
-          ],
-          "correctAnswer": "Router",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Wireshark is a ____________ tool.",
+        "options": [
+          "network protocol analysis",
+          "network connection security",
+          "connection analysis",
+          "defending malicious packet-filtering"
+        ],
+        "correctAnswer": "network protocol analysis",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "Which layer of the OSI model ensures the error-free transmission of data?",
-          "options": [
-              "Physical Layer",
-              "Data Link Layer",
-              "Network Layer",
-              "Transport Layer"
-          ],
-          "correctAnswer": "Data Link Layer",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "Which component of blockchain ensures the security and integrity of data?",
+        "options": [
+          "Nodes",
+          "Hash functions",
+          "Consensus mechanisms",
+          "Smart contracts"
+        ],
+        "correctAnswer": "Hash functions",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       },
       {
-          "type": "Analytical",
-          "question": "What is a Gantt chart used for in project management?",
-          "options": [
-              "To write code",
-              "To design system architecture",
-              "To schedule and track project tasks",
-              "To document requirements"
-          ],
-          "correctAnswer": "To schedule and track project tasks",
-          "isCode": false,
-          "codeContent": "",
-          "isImage": false,
-          "image": ""
+        "type": "Analytical",
+        "question": "In Which type of testing discrete units are combined and tested as a group?",
+        "options": [
+          "Unit testing",
+          "Accountability testing",
+          "Integration testing",
+          "Reliability testing"
+        ],
+        "correctAnswer": "Integration testing",
+        "isCode": false,
+        "codeContent": "",
+        "isImage": false,
+        "image": ""
       }
-  ]
+    ]
 
-    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Analytical', 20);
+    const selectedProgrammingQuestions = selectRandomQuestions(questions, 'Analytical', 15);
     // const selectedWebDevelopmentQuestions = selectRandomQuestions(questions, 'Web Development', 10);
     // const selectedDatabasesQuestions = selectRandomQuestions(questions, 'Databases', 10);
     // const selectedAnalyticalQuestions = selectRandomQuestions(questions, 'Analytical', 10);
