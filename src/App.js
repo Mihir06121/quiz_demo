@@ -792,7 +792,7 @@ const QuizApp = () => {
     )
   };
 
-  const duration = 3600; // 1 hour in seconds
+  const duration = 1800; // 1 hour in seconds
 
   const formatTime = (time) => {
     const hours = Math.floor(time / 3600);
